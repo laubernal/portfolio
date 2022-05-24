@@ -1,4 +1,4 @@
-import { Container, Image, Space } from '@mantine/core';
+import { Container, Image, MantineProvider, Space } from '@mantine/core';
 import React from 'react';
 
 import Footer from './components/footer/Footer';
@@ -7,12 +7,14 @@ import Hero from './components/hero/Hero';
 
 function App(): JSX.Element {
   return (
-    <Container>
-      <Header />
-      <Space h="xl" />
-      <Hero />
-      <Footer />
-    </Container>
+    <MantineProvider theme={{ fontFamily: 'Quicksand' }}>
+      <Container>
+        <Header />
+        <Space h="xl" />
+        <Hero />
+        <Footer />
+      </Container>
+    </MantineProvider>
   );
 }
 
