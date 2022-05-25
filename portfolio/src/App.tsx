@@ -6,6 +6,7 @@ import Header from './components/header/Header';
 import Hero from './components/hero/Hero';
 import AboutMe from './pages/AboutMe';
 import Skills from './pages/Skills';
+import Projects from './pages/Projects';
 
 function App(): JSX.Element {
   return (
@@ -15,6 +16,7 @@ function App(): JSX.Element {
         <Hero />
         <AboutMe />
         <Skills />
+        <Projects />
         <Footer />
       </Container>
     </MantineProvider>
