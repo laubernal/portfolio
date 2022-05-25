@@ -28,7 +28,7 @@ function Hero(): JSX.Element {
           <Image width={25} height={25} src={GitHubLogo} alt="GitHub logo" />
         </Anchor>
         <Anchor href="https://www.linkedin.com/in/laura-bernal-rodríguez-141156239" target="_blank">
-          <Image width={25} height={25} src={LinkedInLogo} />
+          <Image width={25} height={25} src={LinkedInLogo} alt="LinkedIn logo" />
         </Anchor>
       </Group>
     </Container>

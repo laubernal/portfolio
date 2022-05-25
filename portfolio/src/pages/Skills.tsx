@@ -1,11 +1,13 @@
 import React from 'react';
 import { Container, Group, List, Text } from '@mantine/core';
 
+import SectionTitle from '../components/SectionTitle';
+
 function Skills(): JSX.Element {
   return (
     <Container style={{ color: '#707070', paddingTop: 40, paddingBottom: 40 }}>
       <Container style={{ paddingRight: 80 }}>
-        <Text style={{ color: '#8F98B3', fontSize: 35, fontWeight: 700 }}>My skills</Text>
+        <SectionTitle title='My skills' />
         <Text align="justify" style={{ paddingLeft: 30 }}>
           As a self-taught developer I've dedicated a lot of time in learning and applying
           everything learned in real-world applications. I try to focus on writing clean code and

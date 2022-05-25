@@ -1,11 +1,13 @@
 import React from 'react';
 import { Container, Text } from '@mantine/core';
 
+import SectionTitle from '../components/SectionTitle';
+
 function AboutMe(): JSX.Element {
   return (
     <Container style={{ paddingTop: 40, paddingBottom: 40 }}>
       <Container style={{ paddingRight: 80 }}>
-        <Text style={{ color: '#8F98B3', fontSize: 35, fontWeight: 700 }}>About me</Text>
+        <SectionTitle title="About me" />
         <Text align="justify" style={{ color: '#707070', paddingLeft: 30 }}>
           I'm a 26-year-old self-taught back end developer constantly seeking to learn more about
           this vast software world. <br /> <br /> I'm keen on working alongside developers that can
