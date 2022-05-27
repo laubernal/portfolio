@@ -1,23 +1,20 @@
 import React from 'react';
-import { Anchor, Container, Text, Title } from '@mantine/core';
+import { Anchor, Container, Text } from '@mantine/core';
+
+import { linkedInLink, mailLink } from '../../constants';
+import SectionTitle from '../SectionTitle';
 
 function Footer(): JSX.Element {
   return (
     <Container>
-      {/* <> */}
-      <Title order={2}>Let's work together</Title>
+      <SectionTitle title="Let's work together" />
       <Text>Feel free to reach out if you're looking for a developer</Text>
-      <Anchor href="mailto: laurabernaldev@gmail.com">
-        <Text>laurabernaldev@gmail.com</Text>
+      <Anchor href={`mailto: ${mailLink}`}>
+        <Text>{mailLink}</Text>
       </Anchor>
       <Text>
-        Or contact me through{' '}
-        <Anchor href="https://www.linkedin.com/in/laura-bernal-rodr%C3%ADguez-141156239/">
-          LinkedIn
-        </Anchor>{' '}
-        if you prefer
+        Or contact me through <Anchor href={linkedInLink}>LinkedIn</Anchor> if you prefer
       </Text>
-      {/* </> */}{' '}
     </Container>
   );
 }

@@ -3,20 +3,23 @@ import { Container, Group } from '@mantine/core';
 
 import SectionTitle from '../components/SectionTitle';
 import ProjectCard from '../components/ProjectCard';
+import { trainingAppGitHubLink, resourceLinksGitHubLink } from '../constants';
 
 function Projects(): JSX.Element {
   return (
     <Container style={{ paddingTop: 40, paddingBottom: 40 }}>
-      <Container style={{ paddingTop: 25, paddingRight: 80 }}>
+      <Container>
         <SectionTitle title="My projects" />
-        <Group>
+        <Group style={{ paddingTop: 25 }}>
           <ProjectCard
             title="Training app"
             description="A web app to help you keep track of your workout weights and see your evolution"
+            link={trainingAppGitHubLink}
           />
           <ProjectCard
             title="Resource links"
-            description="A web app to save the links to interesting resources"
+            description="A web app to save links of interesting resources"
+            link={resourceLinksGitHubLink}
           />
         </Group>
       </Container>
