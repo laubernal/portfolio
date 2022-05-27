@@ -1,5 +1,5 @@
 import React from 'react';
-import { Anchor, Card, Paper, Text } from '@mantine/core';
+import { Anchor, Card, Center, Paper, Text } from '@mantine/core';
 
 import { primaryColor, textColor } from '../constants';
 
@@ -13,11 +13,9 @@ function ProjectCard({ title, description, link }: props): JSX.Element {
   return (
     <Card shadow="sm" p="lg" style={{ width: 340, margin: 'auto' }}>
       <Paper>
-        <Text
-          style={{ color: primaryColor, fontSize: 25, fontWeight: 600, alignContent: 'center' }}
-        >
-          {title}
-        </Text>
+        <Center>
+          <Text style={{ color: primaryColor, fontSize: 25, fontWeight: 600 }}>{title}</Text>
+        </Center>
         <Text>{description}</Text>
         <Anchor href={link} target="_blank" style={{ color: textColor }}>
           <Text>VIEW PROJECT &#8250;</Text>
