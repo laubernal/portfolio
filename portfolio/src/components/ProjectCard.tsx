@@ -14,9 +14,11 @@ function ProjectCard({ title, description, link }: props): JSX.Element {
     <Card shadow="sm" p="lg" style={{ width: 340, margin: 'auto' }}>
       <Paper>
         <Center>
-          <Text style={{ color: primaryColor, fontSize: 25, fontWeight: 600 }}>{title}</Text>
+          <Text style={{ color: primaryColor, fontSize: 25, fontWeight: 600, paddingBottom: 10 }}>
+            {title}
+          </Text>
         </Center>
-        <Text style={{ color: textColor }}>{description}</Text>
+        <Text style={{ color: textColor, paddingBottom: 10 }}>{description}</Text>
         <Anchor href={link} target="_blank" style={{ color: textColor, fontWeight: 500 }}>
           <Text>VIEW PROJECT &#8250;</Text>
         </Anchor>
