@@ -7,7 +7,7 @@ import { trainingAppGitHubLink, resourceLinksGitHubLink } from '../constants';
 
 function Projects(): JSX.Element {
   return (
-    <Container style={{ paddingTop: 40, paddingBottom: 40 }}>
+    <Container style={{ paddingTop: 140, paddingBottom: 40 }}>
       <Container>
         <SectionTitle title="My projects" />
         <Group style={{ paddingTop: 25 }}>

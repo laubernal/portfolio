@@ -6,7 +6,7 @@ import { primaryColor, textColor } from '../constants';
 
 function Skills(): JSX.Element {
   return (
-    <Container style={{ color: textColor, paddingTop: 40, paddingBottom: 40 }}>
+    <Container style={{ color: textColor, paddingTop: 140, paddingBottom: 40 }}>
       <Container style={{ paddingRight: 80 }}>
         <SectionTitle title="My skills" />
         <Text align="justify" style={{ paddingLeft: 30, paddingTop: 25 }}>

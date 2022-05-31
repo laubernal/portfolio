@@ -3,12 +3,15 @@ import { Anchor, Container, Text } from '@mantine/core';
 
 import { linkedInLink, mailLink } from '../../constants';
 import SectionTitle from '../SectionTitle';
+import { textColor } from '../../constants';
 
 function Footer(): JSX.Element {
   return (
-    <Container>
+    <Container style={{ paddingTop: 140, paddingBottom: 25, color: textColor }}>
       <SectionTitle title="Let's work together" />
-      <Text>Feel free to reach out if you're looking for a developer</Text>
+      <Text style={{ paddingTop: 25 }}>
+        If you're looking for a developer feel free to reach out via email
+      </Text>
       <Anchor href={`mailto: ${mailLink}`}>
         <Text>{mailLink}</Text>
       </Anchor>

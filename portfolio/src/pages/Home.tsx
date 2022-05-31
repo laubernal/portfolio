@@ -1,5 +1,5 @@
 import React from 'react';
-import { ActionIcon, Affix, Button, Container, Transition } from '@mantine/core';
+import { ActionIcon, Affix, Container, Transition } from '@mantine/core';
 import { useWindowScroll } from '@mantine/hooks';
 import { ArrowBarToUp } from 'tabler-icons-react';
 
@@ -13,6 +13,7 @@ import { primaryColor } from '../constants';
 
 function Home(): JSX.Element {
   const [scroll, scrollTo] = useWindowScroll();
+
   return (
     <Container>
       <Header />
@@ -25,7 +26,7 @@ function Home(): JSX.Element {
         <Transition transition="slide-up" mounted={scroll.y > 0}>
           {transitionStyles => (
             <ActionIcon style={transitionStyles} onClick={() => scrollTo({ y: 0 })}>
-              <ArrowBarToUp size={35} strokeWidth={3} color={primaryColor} />
+              <ArrowBarToUp size={40} strokeWidth={3} color={primaryColor} />
             </ActionIcon>
           )}
         </Transition>

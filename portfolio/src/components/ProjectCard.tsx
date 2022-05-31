@@ -16,8 +16,8 @@ function ProjectCard({ title, description, link }: props): JSX.Element {
         <Center>
           <Text style={{ color: primaryColor, fontSize: 25, fontWeight: 600 }}>{title}</Text>
         </Center>
-        <Text>{description}</Text>
-        <Anchor href={link} target="_blank" style={{ color: textColor }}>
+        <Text style={{ color: textColor }}>{description}</Text>
+        <Anchor href={link} target="_blank" style={{ color: textColor, fontWeight: 500 }}>
           <Text>VIEW PROJECT &#8250;</Text>
         </Anchor>
       </Paper>
