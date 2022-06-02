@@ -5,7 +5,7 @@ import { useScrollIntoView } from '@mantine/hooks';
 import { primaryColor } from '../../constants';
 
 function Header(): JSX.Element {
-  const { scrollIntoView, targetRef } = useScrollIntoView<HTMLDivElement>({
+  const { scrollIntoView } = useScrollIntoView<HTMLDivElement>({
     offset: 60,
   });
 
@@ -29,8 +29,8 @@ function Header(): JSX.Element {
           <Text>Contact me</Text>
         </Grid.Col>
       </Grid>
-      <div style={{ height: '50vh' }} />
-      <Text ref={targetRef}>Hello there</Text>
+      {/* <div style={{ height: '50vh' }} />
+      <Text ref={targetRef}>Hello there</Text> */}
     </Container>
   );
 }

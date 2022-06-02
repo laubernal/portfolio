@@ -1,20 +1,33 @@
 import React from 'react';
-import { Anchor, Card, Center, Paper, Text } from '@mantine/core';
+import { Anchor, Card, Center, Image, Paper, Text } from '@mantine/core';
 
 import { primaryColor, textColor } from '../constants';
 
 interface props {
+  imageSrc: string;
+  imageAlt: string;
   title: string;
   description: string;
   link: string;
 }
 
-function ProjectCard({ title, description, link }: props): JSX.Element {
+function ProjectCard({ imageSrc, imageAlt, title, description, link }: props): JSX.Element {
   return (
     <Card shadow="sm" p="lg" style={{ width: 340, margin: 'auto' }}>
+      <Card.Section>
+        <Image src={imageSrc} height={250} alt={imageAlt} />
+      </Card.Section>
       <Paper>
         <Center>
-          <Text style={{ color: primaryColor, fontSize: 25, fontWeight: 600, paddingBottom: 10 }}>
+          <Text
+            style={{
+              color: primaryColor,
+              fontSize: 25,
+              fontWeight: 600,
+              paddingTop: 10,
+              paddingBottom: 10,
+            }}
+          >
             {title}
           </Text>
         </Center>

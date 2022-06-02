@@ -52,6 +52,19 @@ function Footer(): JSX.Element {
           <Image width={25} height={25} src={TypescriptLogo} alt="TypeScript logo" />
         </Anchor>
       </Group>
+
+      <Group position="right" style={{ paddingTop: 10 }}>
+        <Text>
+          Images designed by&nbsp;
+          <Anchor href="https://www.freepik.com/author/pch-vector" target="_blank">
+            pch.vector&nbsp;
+          </Anchor>
+          from&nbsp;
+          <Anchor href="https://www.freepik.com/" target="_blank">
+            Freepik
+          </Anchor>
+        </Text>
+      </Group>
     </Container>
   );
 }

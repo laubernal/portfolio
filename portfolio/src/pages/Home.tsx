@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { ActionIcon, Affix, Container, Transition } from '@mantine/core';
 import { useWindowScroll } from '@mantine/hooks';
 import { ArrowBarToUp } from 'tabler-icons-react';
@@ -13,12 +13,13 @@ import { primaryColor } from '../constants';
 
 function Home(): JSX.Element {
   const [scroll, scrollTo] = useWindowScroll();
+  const ref = useRef(null);
 
   return (
     <Container>
       <Header />
       <Hero />
-      <AboutMe />
+      <AboutMe ref={ref} />
       <Skills />
       <Projects />
       <Footer />
