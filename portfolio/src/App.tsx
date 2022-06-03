@@ -4,7 +4,7 @@ import { Route, Routes } from 'react-router-dom';
 
 import Home from './pages/Home';
 
-function App(): JSX.Element {
+const App = (): JSX.Element => {
   return (
     <MantineProvider theme={{ fontFamily: 'Quicksand' }}>
       <Routes>
@@ -12,6 +12,6 @@ function App(): JSX.Element {
       </Routes>
     </MantineProvider>
   );
-}
+};
 
 export default App;

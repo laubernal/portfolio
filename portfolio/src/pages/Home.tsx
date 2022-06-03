@@ -11,13 +11,12 @@ import Projects from './Projects';
 import Skills from './Skills';
 import { primaryColor } from '../constants';
 
-function Home(): JSX.Element {
+const Home = (): JSX.Element => {
   const [scroll, scrollTo] = useWindowScroll();
-
 
   return (
     <Container>
-      <Header/>
+      <Header />
       <Hero />
       <AboutMe />
       <Skills />
@@ -34,6 +33,6 @@ function Home(): JSX.Element {
       </Affix>
     </Container>
   );
-}
+};
 
 export default Home;
