@@ -10,10 +10,10 @@ import TypescriptLogo from '../../images/technologies/TypescriptLogo.png';
 const anchorStyles = {
   color: primaryColor,
   fontWeight: 500,
-  paddingTop: 30,
+  paddingTop: 10,
 };
 
-function Footer(): JSX.Element {
+const Footer = (): JSX.Element => {
   return (
     <Container
       style={{
@@ -24,21 +24,22 @@ function Footer(): JSX.Element {
     >
       <SectionTitle title="Let's work together" />
       <Text style={{ fontSize: 20, paddingTop: 25 }}>
-        If you're looking for a developer <br /> feel free to reach out <br /> or just take a look
-        at my repositories
+        If you're looking for a developer feel free to reach out:
+        <Group position="left" style={{ paddingBottom: 10 }}>
+          <Anchor href={`mailto: ${mailLink}`} style={anchorStyles}>
+            {mailLink}
+          </Anchor>
+          <Anchor href={linkedInLink} target="_blank" style={anchorStyles}>
+            linkedin
+          </Anchor>
+        </Group>
+        Or just take a look at my repositories:
+        <Group position="left">
+          <Anchor href={gitHubLink} target="_blank" style={anchorStyles}>
+            github
+          </Anchor>
+        </Group>
       </Text>
-
-      <Group position="left">
-        <Anchor href={`mailto: ${mailLink}`} style={anchorStyles}>
-          {mailLink}
-        </Anchor>
-        <Anchor href={linkedInLink} target="_blank" style={anchorStyles}>
-          linkedin
-        </Anchor>
-        <Anchor href={gitHubLink} target="_blank" style={anchorStyles}>
-          github
-        </Anchor>
-      </Group>
 
       <Group position="right">
         <Text>Built with</Text>
@@ -67,6 +68,6 @@ function Footer(): JSX.Element {
       </Group>
     </Container>
   );
-}
+};
 
 export default Footer;

@@ -6,7 +6,7 @@ import LinkedInLogo from '../../images/social/LinkedInLogo.png';
 
 import { primaryColor, linkedInLink, gitHubLink, textColor } from '../../constants';
 
-function Hero(): JSX.Element {
+const Hero = (): JSX.Element => {
   return (
     <Container style={{ paddingTop: 150, paddingBottom: 275 }}>
       <Stack align="flex-start" spacing={1}>
@@ -27,6 +27,6 @@ function Hero(): JSX.Element {
       </Group>
     </Container>
   );
-}
+};
 
 export default Hero;

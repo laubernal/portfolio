@@ -11,7 +11,7 @@ interface props {
   link: string;
 }
 
-function ProjectCard({ imageSrc, imageAlt, title, description, link }: props): JSX.Element {
+const ProjectCard = ({ imageSrc, imageAlt, title, description, link }: props): JSX.Element => {
   return (
     <Card shadow="sm" p="lg" style={{ width: 340, margin: 'auto' }}>
       <Card.Section>
@@ -32,12 +32,16 @@ function ProjectCard({ imageSrc, imageAlt, title, description, link }: props): J
           </Text>
         </Center>
         <Text style={{ color: textColor, paddingBottom: 10 }}>{description}</Text>
-        <Anchor href={link} target="_blank" style={{ color: textColor, fontWeight: 500 }}>
+        <Anchor
+          href={link}
+          target="_blank"
+          style={{ color: textColor, fontWeight: 500, paddingTop: 20 }}
+        >
           <Text>VIEW PROJECT &#8250;</Text>
         </Anchor>
       </Paper>
     </Card>
   );
-}
+};
 
 export default ProjectCard;

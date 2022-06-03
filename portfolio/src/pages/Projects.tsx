@@ -7,7 +7,7 @@ import { trainingAppGitHubLink, resourceLinksGitHubLink } from '../constants';
 import trainingAppImage from '../images/projects/trainingAppImage.jpg';
 import resourcesLinksImage from '../images/projects/resourcesLinksImage.jpg';
 
-function Projects(): JSX.Element {
+const Projects = (): JSX.Element => {
   return (
     <Container style={{ paddingTop: 140, paddingBottom: 40 }}>
       <Container>
@@ -31,6 +31,6 @@ function Projects(): JSX.Element {
       </Container>
     </Container>
   );
-}
+};
 
 export default Projects;

@@ -4,7 +4,7 @@ import { Container, Group, List, Text } from '@mantine/core';
 import SectionTitle from '../components/SectionTitle';
 import { primaryColor, textColor } from '../constants';
 
-function Skills(): JSX.Element {
+const Skills = (): JSX.Element => {
   return (
     <Container style={{ color: textColor, paddingTop: 140, paddingBottom: 40 }}>
       <Container style={{ paddingRight: 80 }}>
@@ -31,6 +31,6 @@ function Skills(): JSX.Element {
       </Container>
     </Container>
   );
-}
+};
 
 export default Skills;

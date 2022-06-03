@@ -1,24 +1,12 @@
-import React, { forwardRef } from 'react';
+import React from 'react';
 import { Container, Text } from '@mantine/core';
 
 import SectionTitle from '../components/SectionTitle';
 import { textColor } from '../constants';
 
-type props = {
-  ref: any;
-};
-
-// const Results = forwardRef(({ ref }: props) => {
-//   return (
-//     <div ref={ref}>
-//       <h1>Results</h1>
-//     </div>
-//   );
-// });
-
-function AboutMe({ ref }: props): JSX.Element {
+const AboutMe = (): JSX.Element => {
   return (
-    <Container ref={ref} style={{ paddingTop: 40, paddingBottom: 40 }}>
+    <Container style={{ paddingTop: 40, paddingBottom: 40 }}>
       <Container style={{ paddingRight: 80 }}>
         <SectionTitle title="About me" />
         <Text align="justify" style={{ color: textColor, paddingLeft: 30, paddingTop: 25 }}>
@@ -30,6 +18,6 @@ function AboutMe({ ref }: props): JSX.Element {
       </Container>
     </Container>
   );
-}
+};
 
 export default AboutMe;
