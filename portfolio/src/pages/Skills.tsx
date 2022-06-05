@@ -4,7 +4,11 @@ import { Container, Group, List, Text } from '@mantine/core';
 import SectionTitle from '../components/SectionTitle';
 import { primaryColor, textColor } from '../constants';
 
-const Skills = (): JSX.Element => {
+interface props {
+  targetRef: any;
+}
+
+const Skills = ({ targetRef: cosa }: props): JSX.Element => {
   return (
     <Container style={{ color: textColor, paddingTop: 140, paddingBottom: 40 }}>
       <Container style={{ paddingRight: 80 }}>

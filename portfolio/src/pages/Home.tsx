@@ -1,6 +1,6 @@
 import React from 'react';
 import { ActionIcon, Affix, Container, Transition } from '@mantine/core';
-import { useWindowScroll } from '@mantine/hooks';
+import { useScrollIntoView, useWindowScroll } from '@mantine/hooks';
 import { ArrowBarToUp } from 'tabler-icons-react';
 
 import Footer from '../components/footer/Footer';
@@ -13,13 +13,14 @@ import { primaryColor } from '../constants';
 
 const Home = (): JSX.Element => {
   const [scroll, scrollTo] = useWindowScroll();
+  const { scrollIntoView, targetRef } = useScrollIntoView<HTMLDivElement>({ offset: 60 });
 
   return (
     <Container>
-      <Header />
+      <Header scrollToSection={scrollIntoView} />
       <Hero />
-      <AboutMe />
-      <Skills />
+      <AboutMe targetRef={targetRef} />
+      <Skills targetRef={targetRef} />
       <Projects />
       <Footer />
       <Affix position={{ bottom: 30, right: 30 }}>
