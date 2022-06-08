@@ -17,15 +17,17 @@ const Projects = (): JSX.Element => {
             imageSrc={trainingAppImage}
             imageAlt="Training App Image"
             title="Training app"
-            description="A web app to help you keep track of your workout weights and see your evolution"
+            descriptionPreview="A web app to help you keep track of your workout weights and see your evolution"
             link={trainingAppGitHubLink}
+            fullDescription="Training app description"
           />
           <ProjectCard
             imageSrc={resourcesLinksImage}
             imageAlt="Resource Links Image"
             title="Resource links"
-            description="A web app to save links of interesting resources"
+            descriptionPreview="A web app to save links of interesting resources"
             link={resourceLinksGitHubLink}
+            fullDescription="Resources links description"
           />
         </Group>
       </Container>
