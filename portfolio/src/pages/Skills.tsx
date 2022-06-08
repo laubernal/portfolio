@@ -5,12 +5,13 @@ import SectionTitle from '../components/SectionTitle';
 import { primaryColor, textColor } from '../constants';
 
 interface props {
-  targetRef: any;
+  reference: any;
 }
 
-const Skills = ({ targetRef: cosa }: props): JSX.Element => {
+const Skills = ({ reference }: props): JSX.Element => {
   return (
-    <Container style={{ color: textColor, paddingTop: 140, paddingBottom: 40 }}>
+    // <Container style={{ color: textColor, paddingTop: 140, paddingBottom: 40 }}>
+    <Container ref={reference} style={{ color: textColor, paddingTop: 600, paddingBottom: 40 }}>
       <Container style={{ paddingRight: 80 }}>
         <SectionTitle title="My skills" />
         <Text align="justify" style={{ paddingLeft: 30, paddingTop: 25 }}>

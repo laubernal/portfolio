@@ -4,10 +4,15 @@ import { ActionIcon, Container, Grid, Text } from '@mantine/core';
 import { primaryColor } from '../../constants';
 
 interface props {
-  scrollToSection: any;
+  scrollToSection: () => void;
 }
 
 const Header = ({ scrollToSection }: props): JSX.Element => {
+  const onClickHeaderSectionTitle = () => {
+    console.log('clicked');
+    scrollToSection();
+  };
+
   return (
     <Container style={{ paddingLeft: 450, paddingTop: 30 }}>
       <Grid grow style={{ color: primaryColor, fontWeight: 500 }}>
@@ -15,7 +20,7 @@ const Header = ({ scrollToSection }: props): JSX.Element => {
           <ActionIcon>
             <Text
               style={{ backgroundColor: 'white', color: primaryColor, fontWeight: 500 }}
-              onClick={() => scrollToSection()}
+              onClick={onClickHeaderSectionTitle}
             >
               About me
             </Text>
@@ -25,7 +30,7 @@ const Header = ({ scrollToSection }: props): JSX.Element => {
           <ActionIcon>
             <Text
               style={{ backgroundColor: 'white', color: primaryColor, fontWeight: 500 }}
-              onClick={() => scrollToSection()}
+              onClick={onClickHeaderSectionTitle}
             >
               Skills
             </Text>
