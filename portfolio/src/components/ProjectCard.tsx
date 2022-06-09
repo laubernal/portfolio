@@ -5,6 +5,7 @@ import { primaryColor, textColor } from '../constants';
 import ReactLogo from '../images/technologies/ReactLogo.png';
 import NodeLogo from '../images/technologies/NodeLogo.png';
 import TypescriptLogo from '../images/technologies/TypescriptLogo.png';
+import { useNavigate } from 'react-router-dom';
 
 interface props {
   imageSrc: string;
@@ -24,13 +25,17 @@ const ProjectCard = ({
   fullDescription,
 }: props): JSX.Element => {
   const [openedModal, setOpenedModal] = useState(false);
+  const navigate = useNavigate();
+
+  const projectTitle = title.trim().toLowerCase().split(' ').join('-');
 
   return (
     <Card
       shadow="sm"
       p="lg"
       style={{ width: 340, margin: 'auto' }}
-      onClick={() => setOpenedModal(true)}
+      // onClick={() => setOpenedModal(true)}
+      onClick={() => navigate(`/${projectTitle}`, { replace: true })}
     >
       <Card.Section>
         <Image src={imageSrc} height={250} alt={imageAlt} />
