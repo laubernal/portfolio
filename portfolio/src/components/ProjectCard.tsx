@@ -55,11 +55,17 @@ const ProjectCard = ({
           target="_blank"
           style={{ color: textColor, fontWeight: 500, paddingTop: 20 }}
         >
-          <Text>VIEW PROJECT &#8250;</Text>
+          <Text>VIEW SOURCE CODE &#8250;</Text>
         </Anchor>
       </Paper>
 
-      <Modal centered opened={openedModal} onClose={() => setOpenedModal(false)} title={title}>
+      <Modal
+        centered
+        size="xl"
+        opened={openedModal}
+        onClose={() => setOpenedModal(false)}
+        title={title}
+      >
         <Text>{fullDescription}</Text>
         <Group position="center">
           <Text>Built with</Text>
