@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Anchor, Card, Center, Group, Image, Modal, Paper, Text } from '@mantine/core';
+import { Anchor, Card, Center, Group, Image, Modal, Paper, Text, Title } from '@mantine/core';
 
 import { primaryColor, textColor } from '../constants';
 import ReactLogo from '../images/technologies/ReactLogo.png';
@@ -61,13 +61,71 @@ const ProjectCard = ({
 
       <Modal
         centered
-        size="xl"
+        size="70%"
+        title={<Title style={{ color: primaryColor, fontSize: 40, paddingTop: 10 }}>{title}</Title>}
+        overflow="inside"
         opened={openedModal}
         onClose={() => setOpenedModal(false)}
-        title={title}
       >
-        <Text>{fullDescription}</Text>
-        <Group position="center">
+        <Text style={{ color: textColor, fontSize: 20 }}>{fullDescription}</Text>
+
+        <Title style={{ color: primaryColor, fontSize: 30, paddingTop: 25, paddingBottom: 10 }}>
+          Purpose and goals
+        </Title>
+        <Text style={{ color: textColor, fontSize: 20 }}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae placerat tellus.
+          Aliquam pulvinar, orci sit amet condimentum auctor, leo turpis venenatis lectus, sit amet
+          porttitor risus odio sit amet tortor. In eget odio ut est maximus elementum id ac tellus.
+          Pellentesque tincidunt nisl ac nulla placerat, at sagittis massa dictum. Morbi gravida dui
+          nec nisl sollicitudin iaculis. Maecenas velit quam, finibus vitae lacinia eget, tristique
+          nec ipsum. Nulla facilisi. Maecenas at justo eros. Aenean auctor lectus et fermentum
+          posuere. Ut metus purus, tempus id nulla at, semper fermentum ligula. Lorem ipsum dolor
+          sit amet, consectetur adipiscing elit. Pellentesque convallis eu mauris vel feugiat.
+        </Text>
+
+        <Title style={{ color: primaryColor, fontSize: 30, paddingTop: 25, paddingBottom: 10 }}>
+          Tech stack and explanation
+        </Title>
+        <Text style={{ color: textColor, fontSize: 20 }}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae placerat tellus.
+          Aliquam pulvinar, orci sit amet condimentum auctor, leo turpis venenatis lectus, sit amet
+          porttitor risus odio sit amet tortor. In eget odio ut est maximus elementum id ac tellus.
+          Pellentesque tincidunt nisl ac nulla placerat, at sagittis massa dictum. Morbi gravida dui
+          nec nisl sollicitudin iaculis. Maecenas velit quam, finibus vitae lacinia eget, tristique
+          nec ipsum. Nulla facilisi. Maecenas at justo eros. Aenean auctor lectus et fermentum
+          posuere. Ut metus purus, tempus id nulla at, semper fermentum ligula. Lorem ipsum dolor
+          sit amet, consectetur adipiscing elit. Pellentesque convallis eu mauris vel feugiat.
+        </Text>
+
+        <Title style={{ color: primaryColor, fontSize: 30, paddingTop: 25, paddingBottom: 10 }}>
+          Problems and thought process
+        </Title>
+        <Text style={{ color: textColor, fontSize: 20 }}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae placerat tellus.
+          Aliquam pulvinar, orci sit amet condimentum auctor, leo turpis venenatis lectus, sit amet
+          porttitor risus odio sit amet tortor. In eget odio ut est maximus elementum id ac tellus.
+          Pellentesque tincidunt nisl ac nulla placerat, at sagittis massa dictum. Morbi gravida dui
+          nec nisl sollicitudin iaculis. Maecenas velit quam, finibus vitae lacinia eget, tristique
+          nec ipsum. Nulla facilisi. Maecenas at justo eros. Aenean auctor lectus et fermentum
+          posuere. Ut metus purus, tempus id nulla at, semper fermentum ligula. Lorem ipsum dolor
+          sit amet, consectetur adipiscing elit. Pellentesque convallis eu mauris vel feugiat.
+        </Text>
+
+        <Title style={{ color: primaryColor, fontSize: 30, paddingTop: 25, paddingBottom: 10 }}>
+          Lessons learned
+        </Title>
+        <Text style={{ color: textColor, fontSize: 20 }}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae placerat tellus.
+          Aliquam pulvinar, orci sit amet condimentum auctor, leo turpis venenatis lectus, sit amet
+          porttitor risus odio sit amet tortor. In eget odio ut est maximus elementum id ac tellus.
+          Pellentesque tincidunt nisl ac nulla placerat, at sagittis massa dictum. Morbi gravida dui
+          nec nisl sollicitudin iaculis. Maecenas velit quam, finibus vitae lacinia eget, tristique
+          nec ipsum. Nulla facilisi. Maecenas at justo eros. Aenean auctor lectus et fermentum
+          posuere. Ut metus purus, tempus id nulla at, semper fermentum ligula. Lorem ipsum dolor
+          sit amet, consectetur adipiscing elit. Pellentesque convallis eu mauris vel feugiat.
+        </Text>
+
+        <Group position="center" style={{ paddingTop: 25 }}>
           <Text>Built with</Text>
           <Anchor href="https://reactjs.org/" target="_blank">
             <Image width={25} height={25} src={ReactLogo} alt="React logo" />
