@@ -1,4 +1,3 @@
-import React from 'react';
 import { ActionIcon, Container, Grid, Text } from '@mantine/core';
 
 import { primaryColor } from '../../constants';

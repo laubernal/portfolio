@@ -1,4 +1,3 @@
-import React from 'react';
 import { Container, Group, Text } from '@mantine/core';
 
 import SectionTitle from '../components/SectionTitle';
@@ -23,7 +22,7 @@ const Projects = (): JSX.Element => {
             title="Training app"
             descriptionPreview="A web app to help you keep track of your workout weights and see your evolution"
             link={trainingAppGitHubLink}
-            fullDescription="Training app description"
+            urlProjectName="training-app"
           />
           <ProjectCard
             imageSrc={resourcesLinksImage}
@@ -31,7 +30,7 @@ const Projects = (): JSX.Element => {
             title="Resource links"
             descriptionPreview="A web app to save links of interesting resources"
             link={resourceLinksGitHubLink}
-            fullDescription="Resources links description"
+            urlProjectName="resources-links"
           />
         </Group>
       </Container>

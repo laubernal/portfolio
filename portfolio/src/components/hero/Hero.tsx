@@ -1,4 +1,3 @@
-import React from 'react';
 import { Anchor, Container, Group, Image, Stack, Text } from '@mantine/core';
 
 import GitHubLogo from '../../images/social/GitHubLogo.png';

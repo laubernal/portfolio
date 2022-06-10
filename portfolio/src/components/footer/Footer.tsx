@@ -1,4 +1,3 @@
-import React from 'react';
 import { Anchor, Container, Group, Image, Text } from '@mantine/core';
 
 import { gitHubLink, linkedInLink, mailLink, textColor, primaryColor } from '../../constants';
