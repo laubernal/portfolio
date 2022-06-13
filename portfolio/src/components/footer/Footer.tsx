@@ -2,9 +2,9 @@ import { Anchor, Container, Group, Image, Text, Tooltip } from '@mantine/core';
 
 import { gitHubLink, linkedInLink, mailLink, textColor, primaryColor } from '../../constants';
 import SectionTitle from '../SectionTitle';
-import ReactLogo from '../../images/technologies/reactLogo2.png';
-import NodeLogo from '../../images/technologies/nodejsLogo.png';
-import TypescriptLogo from '../../images/technologies/tsLogo.png';
+import ReactLogo from '../../images/technologies/ReactLogo.png';
+import NodeLogo from '../../images/technologies/NodeLogo.png';
+import TypescriptLogo from '../../images/technologies/TypeScriptLogo.png';
 
 const anchorStyles = {
   color: primaryColor,

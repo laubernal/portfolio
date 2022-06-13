@@ -1,10 +1,10 @@
 import { Anchor, Container, Group, Image, Text, Tooltip } from '@mantine/core';
 
-import ReactLogo from '../images/technologies/reactLogo2.png';
-import NodeLogo from '../images/technologies/nodejsLogo.png';
-import TypescriptLogo from '../images/technologies/tsLogo.png';
-import PostgreSqlLogo from '../images/technologies/postgresqlLogo.png';
-import DockerLogo from '../images/technologies/dockerLogo.png';
+import ReactLogo from '../images/technologies/ReactLogo.png';
+import NodeLogo from '../images/technologies/NodeLogo.png';
+import TypescriptLogo from '../images/technologies/TypeScriptLogo.png';
+import PostgreSqlLogo from '../images/technologies/PostgreSqlLogo.png';
+import DockerLogo from '../images/technologies/DockerLogo.png';
 import { primaryColor, textColor, trainingAppGitHubLink } from '../constants';
 import Footer from '../components/footer/Footer';
 import ScrollToTopArrow from '../components/ScrollToTopArrow';

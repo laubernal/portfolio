@@ -18,10 +18,10 @@ const Hero = (): JSX.Element => {
 
       <Group style={{ paddingTop: 50 }}>
         <Anchor href={gitHubLink} target="_blank">
-          <Image width={25} height={25} src={GitHubLogo} alt="GitHub logo" />
+          <Image width={35} height={35} src={GitHubLogo} alt="GitHub logo" />
         </Anchor>
         <Anchor href={linkedInLink} target="_blank">
-          <Image width={25} height={25} src={LinkedInLogo} alt="LinkedIn logo" />
+          <Image width={35} height={35} src={LinkedInLogo} alt="LinkedIn logo" />
         </Anchor>
       </Group>
     </Container>
