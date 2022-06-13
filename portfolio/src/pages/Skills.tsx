@@ -9,7 +9,11 @@ interface props {
 
 const Skills = ({ reference }: props): JSX.Element => {
   return (
-    <Container ref={reference} style={{ color: textColor, paddingTop: 140, paddingBottom: 40 }}>
+    <Container
+      id="skills"
+      ref={reference}
+      style={{ color: textColor, paddingTop: 140, paddingBottom: 40 }}
+    >
       <Container style={{ paddingRight: 80 }}>
         <SectionTitle title="My skills" />
         <Text align="justify" style={{ paddingLeft: 30, paddingTop: 25 }}>

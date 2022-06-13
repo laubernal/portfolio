@@ -3,7 +3,7 @@ import { useScrollIntoView } from '@mantine/hooks';
 import { Container } from '@mantine/core';
 
 import Footer from '../components/footer/Footer';
-// import Header from '../components/header/Header';
+import Header from '../components/header/Header';
 import Hero from '../components/hero/Hero';
 import AboutMe from './AboutMe';
 import Projects from './Projects';
@@ -21,7 +21,7 @@ const Home = (): JSX.Element => {
 
   return (
     <Container>
-      {/* <Header scrollToSection={scrollIntoView} /> */}
+      <Header />
       <Hero />
       <AboutMe reference={targetRef} />
       <Skills reference={skillsRef} />

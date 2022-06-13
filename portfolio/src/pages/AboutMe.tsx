@@ -25,7 +25,7 @@ const getAge = (): number => {
 
 const AboutMe = ({ reference }: props): JSX.Element => {
   return (
-    <Container ref={reference} style={{ paddingTop: 40, paddingBottom: 40 }}>
+    <Container id="aboutMe" ref={reference} style={{ paddingTop: 40, paddingBottom: 40 }}>
       <Container style={{ paddingRight: 80 }}>
         <SectionTitle title="About me" />
         <Text align="justify" style={{ color: textColor, paddingLeft: 30, paddingTop: 25 }}>
