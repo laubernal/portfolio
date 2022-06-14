@@ -1,5 +1,5 @@
 import { Anchor, Card, Center, Image, Paper, Text } from '@mantine/core';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import { primaryColor, textColor } from '../constants';
 
@@ -16,37 +16,35 @@ const ProjectCard = ({
   imageSrc,
   imageAlt,
   title,
-  descriptionPreview: description,
+  descriptionPreview,
   link,
   urlProjectName,
 }: props): JSX.Element => {
-  const navigate = useNavigate();
-
   return (
-    <Card
-      shadow="sm"
-      p="lg"
-      style={{ width: 340, margin: 'auto' }}
-      onClick={() => navigate(`/${urlProjectName}`, { replace: true })}
-    >
-      <Card.Section>
+    <Card shadow="sm" p="lg" style={{ width: 340, margin: 'auto' }}>
+      <Card.Section<typeof Link> component={Link} to={`/${urlProjectName}`}>
         <Image src={imageSrc} height={250} alt={imageAlt} />
       </Card.Section>
+
       <Paper>
         <Center>
-          <Text
+          <Text<typeof Link>
+            component={Link}
+            to={`/${urlProjectName}`}
             style={{
               color: primaryColor,
               fontSize: 25,
               fontWeight: 600,
               paddingTop: 10,
               paddingBottom: 10,
+              textDecoration: 'none',
             }}
           >
             {title}
           </Text>
         </Center>
-        <Text style={{ color: textColor, paddingBottom: 10 }}>{description}</Text>
+        <Text style={{ color: textColor, paddingBottom: 10 }}>{descriptionPreview}</Text>
+
         <Anchor
           href={link}
           target="_blank"
