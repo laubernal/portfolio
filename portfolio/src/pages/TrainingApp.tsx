@@ -9,10 +9,12 @@ import { primaryColor, textColor, trainingAppGitHubLink } from '../constants';
 import Footer from '../components/footer/Footer';
 import ScrollToTopArrow from '../components/ScrollToTopArrow';
 import SectionTitle from '../components/SectionTitle';
+import BackToHomeArrow from '../components/BackToHomeArrow';
 
 const TrainingApp = (): JSX.Element => {
   return (
     <Container style={{ paddingTop: 200 }}>
+      <BackToHomeArrow />
       <Text style={{ color: primaryColor, fontSize: 60, fontWeight: 700, letterSpacing: 5 }}>
         Training app 🏋🏻‍♀️
       </Text>

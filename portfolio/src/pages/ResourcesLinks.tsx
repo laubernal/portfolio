@@ -1,13 +1,15 @@
-import { Anchor, Container, Group, Image, Text } from '@mantine/core';
+import { Anchor, Container, Text } from '@mantine/core';
 
 import { primaryColor, resourceLinksGitHubLink, textColor } from '../constants';
 import Footer from '../components/footer/Footer';
 import ScrollToTopArrow from '../components/ScrollToTopArrow';
 import SectionTitle from '../components/SectionTitle';
+import BackToHomeArrow from '../components/BackToHomeArrow';
 
 const ResourcesLinks = (): JSX.Element => {
   return (
     <Container style={{ paddingTop: 200 }}>
+      <BackToHomeArrow />
       <Text style={{ color: primaryColor, fontSize: 60, fontWeight: 700, letterSpacing: 5 }}>
         Resources links 🔗
       </Text>
