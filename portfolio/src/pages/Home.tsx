@@ -1,5 +1,3 @@
-import { createRef } from 'react';
-import { useScrollIntoView } from '@mantine/hooks';
 import { Container } from '@mantine/core';
 
 import Footer from '../components/footer/Footer';
@@ -11,20 +9,12 @@ import Skills from './Skills';
 import ScrollToTopArrow from '../components/ScrollToTopArrow';
 
 const Home = (): JSX.Element => {
-  // const { scrollIntoView, targetRef } = useScrollIntoView<HTMLDivElement>({
-  //   offset: 0,
-  // });
-  const { targetRef } = useScrollIntoView<HTMLDivElement>({
-    offset: 0,
-  });
-  const skillsRef = createRef();
-
   return (
     <Container>
       <Header />
       <Hero />
-      <AboutMe reference={targetRef} />
-      <Skills reference={skillsRef} />
+      <AboutMe />
+      <Skills />
       <Projects />
       <Footer />
       <ScrollToTopArrow />

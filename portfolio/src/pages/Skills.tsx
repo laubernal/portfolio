@@ -3,17 +3,9 @@ import { Container, Group, List, Text } from '@mantine/core';
 import SectionTitle from '../components/SectionTitle';
 import { primaryColor, textColor } from '../constants';
 
-interface props {
-  reference: any;
-}
-
-const Skills = ({ reference }: props): JSX.Element => {
+const Skills = (): JSX.Element => {
   return (
-    <Container
-      id="skills"
-      ref={reference}
-      style={{ color: textColor, paddingTop: 140, paddingBottom: 40 }}
-    >
+    <Container id="skills" style={{ color: textColor, paddingTop: 140, paddingBottom: 40 }}>
       <Container style={{ paddingRight: 80 }}>
         <SectionTitle title="My skills" />
         <Text align="justify" style={{ paddingLeft: 30, paddingTop: 25 }}>

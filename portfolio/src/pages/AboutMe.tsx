@@ -3,10 +3,6 @@ import { Container, Text } from '@mantine/core';
 import SectionTitle from '../components/SectionTitle';
 import { textColor } from '../constants';
 
-interface props {
-  reference: any;
-}
-
 const getAge = (): number => {
   const birthdayDate = new Date(1995, 9, 17);
   const currentDate = new Date();
@@ -23,9 +19,9 @@ const getAge = (): number => {
   return age;
 };
 
-const AboutMe = ({ reference }: props): JSX.Element => {
+const AboutMe = (): JSX.Element => {
   return (
-    <Container id="aboutMe" ref={reference} style={{ paddingTop: 40, paddingBottom: 40 }}>
+    <Container id="aboutMe" style={{ paddingTop: 40, paddingBottom: 40 }}>
       <Container style={{ paddingRight: 80 }}>
         <SectionTitle title="About me" />
         <Text align="justify" style={{ color: textColor, paddingLeft: 30, paddingTop: 25 }}>
