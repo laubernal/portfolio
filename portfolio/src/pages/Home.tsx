@@ -7,6 +7,7 @@ import AboutMe from './AboutMe';
 import Projects from './Projects';
 import Skills from './Skills';
 import ScrollToTopArrow from '../components/ScrollToTopArrow';
+import ContactMe from '../components/ContactMe';
 
 const Home = (): JSX.Element => {
   return (
@@ -16,6 +17,7 @@ const Home = (): JSX.Element => {
       <AboutMe />
       <Skills />
       <Projects />
+      <ContactMe />
       <Footer />
       <ScrollToTopArrow />
     </Container>

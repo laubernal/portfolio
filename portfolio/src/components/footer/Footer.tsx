@@ -1,47 +1,13 @@
 import { Anchor, Container, Group, Image, Text, Tooltip } from '@mantine/core';
 
-import { gitHubLink, linkedInLink, mailLink, textColor, primaryColor } from '../../constants';
-import SectionTitle from '../SectionTitle';
 import ReactLogo from '../../images/technologies/ReactLogo.png';
 import NodeLogo from '../../images/technologies/NodeLogo.png';
 import TypescriptLogo from '../../images/technologies/TypeScriptLogo.png';
-
-const anchorStyles = {
-  color: primaryColor,
-  fontSize: 18,
-  fontWeight: 600,
-  paddingTop: 10,
-};
+import { nodeWeb, reactWeb, textColor, typescriptWeb } from '../../constants';
 
 const Footer = (): JSX.Element => {
   return (
-    <Container
-      id="contact"
-      style={{
-        color: textColor,
-        paddingTop: 140,
-        paddingBottom: 50,
-      }}
-    >
-      <SectionTitle title="Let's work together" />
-      <Text style={{ fontSize: 20, paddingTop: 25 }}>
-        If you're looking for a developer feel free to reach out:
-        <Group style={{ paddingBottom: 10, paddingLeft: 50 }}>
-          <Anchor href={`mailto: ${mailLink}`} style={anchorStyles}>
-            {mailLink}
-          </Anchor>
-          <Anchor href={linkedInLink} target="_blank" style={anchorStyles}>
-            linkedin
-          </Anchor>
-        </Group>
-        Or just take a look at my repositories:
-        <Group style={{ paddingLeft: 150 }}>
-          <Anchor href={gitHubLink} target="_blank" style={anchorStyles}>
-            github
-          </Anchor>
-        </Group>
-      </Text>
-
+    <Container style={{ color: textColor }}>
       <Group position="right">
         <Text>Site built with</Text>
 
@@ -52,7 +18,7 @@ const Footer = (): JSX.Element => {
           transitionDuration={300}
           transitionTimingFunction="ease"
         >
-          <Anchor href="https://reactjs.org/" target="_blank">
+          <Anchor href={reactWeb} target="_blank">
             <Image width={25} height={25} src={ReactLogo} alt="React logo" />
           </Anchor>
         </Tooltip>
@@ -64,7 +30,7 @@ const Footer = (): JSX.Element => {
           transitionDuration={300}
           transitionTimingFunction="ease"
         >
-          <Anchor href="https://nodejs.dev/" target="_blank">
+          <Anchor href={nodeWeb} target="_blank">
             <Image width={40} height={25} src={NodeLogo} alt="Node logo" />
           </Anchor>
         </Tooltip>
@@ -76,7 +42,7 @@ const Footer = (): JSX.Element => {
           transitionDuration={300}
           transitionTimingFunction="ease"
         >
-          <Anchor href="https://www.typescriptlang.org/" target="_blank">
+          <Anchor href={typescriptWeb} target="_blank">
             <Image width={25} height={25} src={TypescriptLogo} alt="TypeScript logo" />
           </Anchor>
         </Tooltip>

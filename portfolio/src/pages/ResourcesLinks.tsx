@@ -1,6 +1,20 @@
-import { Anchor, Container, Text } from '@mantine/core';
+import { Anchor, Container, Group, Image, Text, Tooltip } from '@mantine/core';
 
-import { primaryColor, resourceLinksGitHubLink, textColor } from '../constants';
+import {
+  dockerWeb,
+  nodeWeb,
+  postgresqlWeb,
+  primaryColor,
+  reactWeb,
+  resourceLinksGitHubLink,
+  textColor,
+  typescriptWeb,
+} from '../constants';
+import ReactLogo from '../images/technologies/ReactLogo.png';
+import NodeLogo from '../images/technologies/NodeLogo.png';
+import TypescriptLogo from '../images/technologies/TypeScriptLogo.png';
+import PostgreSqlLogo from '../images/technologies/PostgreSqlLogo.png';
+import DockerLogo from '../images/technologies/DockerLogo.png';
 import Footer from '../components/footer/Footer';
 import ScrollToTopArrow from '../components/ScrollToTopArrow';
 import SectionTitle from '../components/SectionTitle';
@@ -51,6 +65,73 @@ const ResourcesLinks = (): JSX.Element => {
         purus, tempus id nulla at, semper fermentum ligula. Lorem ipsum dolor sit amet, consectetur
         adipiscing elit. Pellentesque convallis eu mauris vel feugiat.
       </Text>
+
+      <Group position="center" spacing={50} style={{ paddingBottom: 90 }}>
+        <Tooltip
+          label="Node.js"
+          withArrow
+          position="bottom"
+          transition="slide-down"
+          transitionDuration={300}
+          transitionTimingFunction="ease"
+        >
+          <Anchor href={nodeWeb} target="_blank">
+            <Image src={NodeLogo} alt="Node logo" />
+          </Anchor>
+        </Tooltip>
+
+        <Tooltip
+          label="TypeScript"
+          withArrow
+          position="bottom"
+          transition="slide-down"
+          transitionDuration={300}
+          transitionTimingFunction="ease"
+        >
+          <Anchor href={typescriptWeb} target="_blank">
+            <Image src={TypescriptLogo} alt="TypeScript logo" />
+          </Anchor>
+        </Tooltip>
+
+        <Tooltip
+          label="React"
+          withArrow
+          position="bottom"
+          transition="slide-down"
+          transitionDuration={300}
+          transitionTimingFunction="ease"
+        >
+          <Anchor href={reactWeb} target="_blank">
+            <Image src={ReactLogo} alt="React logo" />
+          </Anchor>
+        </Tooltip>
+
+        <Tooltip
+          label="PostgreSQL"
+          withArrow
+          position="bottom"
+          transition="slide-down"
+          transitionDuration={300}
+          transitionTimingFunction="ease"
+        >
+          <Anchor href={postgresqlWeb} target="_blank">
+            <Image src={PostgreSqlLogo} alt="PostgreSQL logo" />
+          </Anchor>
+        </Tooltip>
+
+        <Tooltip
+          label="Docker"
+          withArrow
+          position="bottom"
+          transition="slide-down"
+          transitionDuration={300}
+          transitionTimingFunction="ease"
+        >
+          <Anchor href={dockerWeb} target="_blank">
+            <Image src={DockerLogo} alt="Docker logo" />
+          </Anchor>
+        </Tooltip>
+      </Group>
 
       <SectionTitle title="Problems and thought process" />
 

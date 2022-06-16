@@ -5,7 +5,16 @@ import NodeLogo from '../images/technologies/NodeLogo.png';
 import TypescriptLogo from '../images/technologies/TypeScriptLogo.png';
 import PostgreSqlLogo from '../images/technologies/PostgreSqlLogo.png';
 import DockerLogo from '../images/technologies/DockerLogo.png';
-import { primaryColor, textColor, trainingAppGitHubLink } from '../constants';
+import {
+  dockerWeb,
+  nodeWeb,
+  postgresqlWeb,
+  primaryColor,
+  reactWeb,
+  textColor,
+  trainingAppGitHubLink,
+  typescriptWeb,
+} from '../constants';
 import Footer from '../components/footer/Footer';
 import ScrollToTopArrow from '../components/ScrollToTopArrow';
 import SectionTitle from '../components/SectionTitle';
@@ -52,7 +61,7 @@ const TrainingApp = (): JSX.Element => {
         database, and Docker.
       </Text>
 
-      <Group position="center" style={{ paddingBottom: 90 }}>
+      <Group position="center" spacing={50} style={{ paddingBottom: 90 }}>
         <Tooltip
           label="Node.js"
           withArrow
@@ -61,7 +70,7 @@ const TrainingApp = (): JSX.Element => {
           transitionDuration={300}
           transitionTimingFunction="ease"
         >
-          <Anchor href="https://nodejs.dev/" target="_blank">
+          <Anchor href={nodeWeb} target="_blank">
             <Image src={NodeLogo} alt="Node logo" />
           </Anchor>
         </Tooltip>
@@ -74,7 +83,7 @@ const TrainingApp = (): JSX.Element => {
           transitionDuration={300}
           transitionTimingFunction="ease"
         >
-          <Anchor href="https://www.typescriptlang.org/" target="_blank">
+          <Anchor href={typescriptWeb} target="_blank">
             <Image src={TypescriptLogo} alt="TypeScript logo" />
           </Anchor>
         </Tooltip>
@@ -87,7 +96,7 @@ const TrainingApp = (): JSX.Element => {
           transitionDuration={300}
           transitionTimingFunction="ease"
         >
-          <Anchor href="https://reactjs.org/" target="_blank">
+          <Anchor href={reactWeb} target="_blank">
             <Image src={ReactLogo} alt="React logo" />
           </Anchor>
         </Tooltip>
@@ -100,7 +109,7 @@ const TrainingApp = (): JSX.Element => {
           transitionDuration={300}
           transitionTimingFunction="ease"
         >
-          <Anchor href="https://www.postgresql.org/" target="_blank">
+          <Anchor href={postgresqlWeb} target="_blank">
             <Image src={PostgreSqlLogo} alt="PostgreSQL logo" />
           </Anchor>
         </Tooltip>
@@ -113,7 +122,7 @@ const TrainingApp = (): JSX.Element => {
           transitionDuration={300}
           transitionTimingFunction="ease"
         >
-          <Anchor href="https://www.docker.com/" target="_blank">
+          <Anchor href={dockerWeb} target="_blank">
             <Image src={DockerLogo} alt="Docker logo" />
           </Anchor>
         </Tooltip>
