@@ -1,12 +1,18 @@
 import { Container, Grid, Text, Anchor, Menu, UnstyledButton, MediaQuery } from '@mantine/core';
 import { Menu2 } from 'tabler-icons-react';
 
-import { primaryColor } from '../../constants';
+import { primaryColor, textColor } from '../../constants';
 
 const headerTextStyles = {
   fontSize: 18,
   fontWeight: 500,
   color: primaryColor,
+};
+
+const menuItemsStyles = {
+  color: textColor,
+  fontSize: 16,
+  fontWeight: 500,
 };
 
 const Header = (): JSX.Element => {
@@ -51,6 +57,9 @@ const Header = (): JSX.Element => {
 
       <MediaQuery largerThan={940} styles={{ display: 'none' }}>
         <Menu
+          trigger="hover"
+          size={150}
+          withArrow
           control={
             <UnstyledButton>
               <Menu2 size={36} color={primaryColor} />
@@ -61,23 +70,18 @@ const Header = (): JSX.Element => {
             paddingLeft: 300,
           })}
         >
-          <Menu.Label>Application</Menu.Label>
-          <Menu.Item>Settings</Menu.Item>
-          <Menu.Item>Messages</Menu.Item>
-          <Menu.Item>Gallery</Menu.Item>
-          <Menu.Item
-            rightSection={
-              <Text size="xs" color="dimmed">
-                ⌘K
-              </Text>
-            }
-          >
-            Search
+          <Menu.Item onClick={() => scrollToSection('aboutMe')} style={menuItemsStyles}>
+            About me
           </Menu.Item>
-
-          <Menu.Label>Danger zone</Menu.Label>
-          <Menu.Item>Transfer my data</Menu.Item>
-          <Menu.Item color="red">Delete my account</Menu.Item>
+          <Menu.Item onClick={() => scrollToSection('skills')} style={menuItemsStyles}>
+            Skills
+          </Menu.Item>
+          <Menu.Item onClick={() => scrollToSection('projects')} style={menuItemsStyles}>
+            Projects
+          </Menu.Item>
+          <Menu.Item onClick={() => scrollToSection('contact')} style={menuItemsStyles}>
+            Contact me
+          </Menu.Item>
         </Menu>
       </MediaQuery>
     </Container>
