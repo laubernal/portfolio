@@ -9,6 +9,8 @@ const anchorStyles = {
   paddingTop: 10,
 };
 
+// 888 px to 1 column
+
 const ContactMe = (): JSX.Element => {
   return (
     <Container
@@ -16,7 +18,7 @@ const ContactMe = (): JSX.Element => {
       style={{
         color: textColor,
         paddingTop: 140,
-        paddingBottom: 150,
+        paddingBottom: 200,
       }}
     >
       <Grid style={{ height: 200 }}>
@@ -64,25 +66,6 @@ const ContactMe = (): JSX.Element => {
           </Group>
         </Grid.Col>
       </Grid>
-
-      {/* <SectionTitle title="Let's work together" />
-      <Text style={{ fontSize: 20, paddingTop: 25 }}>
-        If you're looking for a developer feel free to reach out:
-        <Group style={{ paddingBottom: 10, paddingLeft: 50 }}>
-          <Anchor href={`mailto: ${mailLink}`} style={anchorStyles}>
-            {mailLink}
-          </Anchor>
-          <Anchor href={linkedInLink} target="_blank" style={anchorStyles}>
-            linkedin
-          </Anchor>
-        </Group>
-        Or just take a look at my repositories:
-        <Group style={{ paddingLeft: 150 }}>
-          <Anchor href={gitHubLink} target="_blank" style={anchorStyles}>
-            github
-          </Anchor>
-        </Group>
-      </Text> */}
     </Container>
   );
 };
