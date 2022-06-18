@@ -1,6 +1,14 @@
 import { Anchor, Container, Grid, Group, Text } from '@mantine/core';
 
-import { gitHubLink, linkedInLink, mailLink, primaryColor, textColor } from '../constants';
+import {
+  backgroundColor,
+  gitHubLink,
+  linkedInLink,
+  mailLink,
+  primaryColor,
+  secondaryColor,
+  textColor,
+} from '../constants';
 
 const anchorStyles = {
   color: 'white',
@@ -43,7 +51,7 @@ const ContactMe = (): JSX.Element => {
             </Anchor>
           </Group>
         </Grid.Col>
-        <Grid.Col span={6} style={{ backgroundColor: '#F3F4F6', paddingLeft: 5 }}>
+        <Grid.Col span={6} style={{ backgroundColor: backgroundColor, paddingLeft: 5 }}>
           <Text
             style={{
               color: primaryColor,
@@ -59,7 +67,7 @@ const ContactMe = (): JSX.Element => {
             <Anchor
               href={gitHubLink}
               target="_blank"
-              style={{ color: textColor, fontSize: 20, fontWeight: 600, paddingTop: 10 }}
+              style={{ color: secondaryColor, fontSize: 20, fontWeight: 600, paddingTop: 10 }}
             >
               github
             </Anchor>

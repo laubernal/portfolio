@@ -24,7 +24,10 @@ const AboutMe = (): JSX.Element => {
     <Container id="aboutMe" style={{ paddingTop: 40, paddingBottom: 40 }}>
       <Container style={{ paddingRight: 80 }}>
         <SectionTitle title="About me" />
-        <Text align="justify" style={{ color: textColor, paddingLeft: 30, paddingTop: 25 }}>
+        <Text
+          align="justify"
+          style={{ color: textColor, fontSize: 20, paddingLeft: 30, paddingTop: 25 }}
+        >
           I'm a {getAge()}-year-old back end developer passionate about writing clean, mantainable
           and scalable code. I'm keen on working with clean architecture and good practices. <br />
           <br /> It was in 2015 when I wrote my first lines of code and the world of software began

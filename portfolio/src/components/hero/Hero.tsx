@@ -3,17 +3,20 @@ import { Anchor, Container, Group, Image, Stack, Text } from '@mantine/core';
 import GitHubLogo from '../../images/social/GitHubLogo.png';
 import LinkedInLogo from '../../images/social/LinkedInLogo.png';
 
-import { primaryColor, linkedInLink, gitHubLink, textColor } from '../../constants';
+import { primaryColor, linkedInLink, gitHubLink, textColor, secondaryColor } from '../../constants';
 
 const Hero = (): JSX.Element => {
   return (
     <Container style={{ paddingTop: 150, paddingBottom: 275 }}>
       <Stack align="flex-start" spacing={1}>
-        <Text style={{ color: textColor, fontSize: 25 }}>HI, MY NAME IS</Text>
-        <Text style={{ color: primaryColor, fontSize: 60, fontWeight: 700, letterSpacing: 10 }}>
+        <Text style={{ color: textColor, fontSize: 35 }}>HI, MY NAME IS</Text>
+        <Text style={{ color: primaryColor, fontSize: 70, fontWeight: 700, letterSpacing: 10 }}>
           LAURA BERNAL
         </Text>
-        <Text style={{ color: textColor, fontSize: 30 }}>BACK END DEVELOPER</Text>
+        <Group>
+          <Text style={{ color: textColor, fontSize: 40 }}>BACK END</Text>
+          <Text style={{ color: secondaryColor, fontSize: 40, fontWeight: 500 }}>DEVELOPER</Text>
+        </Group>
       </Stack>
 
       <Group style={{ paddingTop: 50 }}>

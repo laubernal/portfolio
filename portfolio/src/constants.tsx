@@ -1,5 +1,7 @@
-export const primaryColor = '#8F98B3';
-export const textColor = '#707070';
+export const primaryColor = '#7950f2';
+export const secondaryColor = '#ea526f';
+export const textColor = '#212529';
+export const backgroundColor = '#F3F4F6';
 
 export const trainingAppGitHubLink = 'https://github.com/laubernal/training-app';
 export const resourceLinksGitHubLink = 'https://github.com/laubernal/resources-links';

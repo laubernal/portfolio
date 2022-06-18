@@ -1,7 +1,7 @@
 import { Anchor, Card, Center, Image, Paper, Text } from '@mantine/core';
 import { Link } from 'react-router-dom';
 
-import { primaryColor, textColor } from '../constants';
+import { secondaryColor, textColor } from '../constants';
 
 interface props {
   imageSrc: string;
@@ -32,7 +32,7 @@ const ProjectCard = ({
             component={Link}
             to={`/${urlProjectName}`}
             style={{
-              color: primaryColor,
+              color: secondaryColor,
               fontSize: 25,
               fontWeight: 600,
               paddingTop: 10,
@@ -43,14 +43,12 @@ const ProjectCard = ({
             {title}
           </Text>
         </Center>
-        <Text style={{ color: textColor, paddingBottom: 10 }}>{descriptionPreview}</Text>
+        <Text style={{ color: textColor, fontSize: 18, paddingBottom: 20, paddingLeft: 20 }}>
+          {descriptionPreview}
+        </Text>
 
-        <Anchor
-          href={link}
-          target="_blank"
-          style={{ color: textColor, fontWeight: 500, paddingTop: 20 }}
-        >
-          <Text>VIEW SOURCE CODE &#8250;</Text>
+        <Anchor href={link} target="_blank" style={{ color: textColor }}>
+          <Text style={{ fontWeight: 500, paddingLeft: 20 }}>VIEW SOURCE CODE &#8250;</Text>
         </Anchor>
       </Paper>
     </Card>

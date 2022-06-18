@@ -11,6 +11,7 @@ import {
   postgresqlWeb,
   primaryColor,
   reactWeb,
+  secondaryColor,
   textColor,
   trainingAppGitHubLink,
   typescriptWeb,
@@ -37,7 +38,7 @@ const TrainingApp = (): JSX.Element => {
         <Anchor
           href={trainingAppGitHubLink}
           target="_blank"
-          style={{ color: textColor, fontWeight: 500, paddingBottom: 60 }}
+          style={{ color: secondaryColor, fontWeight: 500, paddingBottom: 60 }}
         >
           <Text>VIEW SOURCE CODE &#8250;</Text>
         </Anchor>

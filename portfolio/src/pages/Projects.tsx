@@ -11,11 +11,14 @@ const Projects = (): JSX.Element => {
     <Container id="projects" style={{ paddingTop: 140, paddingBottom: 40 }}>
       <Container style={{ paddingRight: 80 }}>
         <SectionTitle title="What I've been working on" />
-        <Text align="justify" style={{ color: textColor, paddingLeft: 30, paddingTop: 25 }}>
+        <Text
+          align="justify"
+          style={{ color: textColor, fontSize: 20, paddingLeft: 30, paddingTop: 25 }}
+        >
           I like to always have my hands on a project so I can improve my coding skills. Take a look
           at some of the projects I've dedicated my time to.
         </Text>
-        <Group style={{ paddingTop: 25 }}>
+        <Group style={{ paddingTop: 40 }}>
           <ProjectCard
             imageSrc={trainingAppImage}
             imageAlt="Training App Image"

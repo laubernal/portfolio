@@ -4,7 +4,7 @@ import { Menu2 } from 'tabler-icons-react';
 import { primaryColor, textColor } from '../../constants';
 
 const headerTextStyles = {
-  fontSize: 18,
+  fontSize: 20,
   fontWeight: 500,
   color: primaryColor,
 };
