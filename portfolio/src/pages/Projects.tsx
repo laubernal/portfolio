@@ -8,7 +8,7 @@ import resourcesLinksImage from '../images/projects/resourcesLinksImage.jpg';
 
 const Projects = (): JSX.Element => {
   return (
-    <Container id="projects" style={{ paddingTop: 140, paddingBottom: 40 }}>
+    <Container id="projects" style={{ paddingTop: 140, paddingBottom: 100 }}>
       <Container style={{ paddingRight: 80 }}>
         <SectionTitle title="What I've been working on" />
         <Text

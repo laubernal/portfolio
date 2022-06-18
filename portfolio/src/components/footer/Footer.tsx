@@ -10,12 +10,12 @@ const Footer = (): JSX.Element => {
     <Container style={{ color: textColor, fontWeight: 400, paddingBottom: 30 }}>
       <Grid columns={24}>
         <Grid.Col span={7}>
-          <Text>Made with 💜 by Laura Bernal</Text>
+          <Text style={{ fontSize: 18 }}>Made with 💜 by Laura Bernal</Text>
         </Grid.Col>
 
         <Grid.Col span={7}>
           <Group>
-            <Text>Site built with</Text>
+            <Text style={{ fontSize: 18 }}>Site built with</Text>
 
             <Tooltip
               label="React"
@@ -57,7 +57,7 @@ const Footer = (): JSX.Element => {
 
         <Grid.Col span={10}>
           <Group>
-            <Text>
+            <Text style={{ fontSize: 18 }}>
               Images designed by&nbsp;
               <Anchor
                 href="https://www.freepik.com/author/pch-vector"

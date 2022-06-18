@@ -6,7 +6,6 @@ import {
   linkedInLink,
   mailLink,
   primaryColor,
-  secondaryColor,
   textColor,
 } from '../constants';
 
@@ -67,7 +66,7 @@ const ContactMe = (): JSX.Element => {
             <Anchor
               href={gitHubLink}
               target="_blank"
-              style={{ color: secondaryColor, fontSize: 20, fontWeight: 600, paddingTop: 10 }}
+              style={{ color: textColor, fontSize: 20, fontWeight: 600, paddingTop: 10 }}
             >
               github
             </Anchor>

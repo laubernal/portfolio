@@ -7,7 +7,7 @@ import { primaryColor, linkedInLink, gitHubLink, textColor, secondaryColor } fro
 
 const Hero = (): JSX.Element => {
   return (
-    <Container style={{ paddingTop: 150, paddingBottom: 275 }}>
+    <Container style={{ paddingTop: 250, paddingBottom: 255 }}>
       <Stack align="flex-start" spacing={1}>
         <Text style={{ color: textColor, fontSize: 35 }}>HI, MY NAME IS</Text>
         <Text style={{ color: primaryColor, fontSize: 70, fontWeight: 700, letterSpacing: 10 }}>
