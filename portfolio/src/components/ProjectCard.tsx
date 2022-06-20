@@ -21,7 +21,7 @@ const ProjectCard = ({
   urlProjectName,
 }: props): JSX.Element => {
   return (
-    <Card shadow="sm" p="lg" style={{ width: 340, margin: 'auto' }}>
+    <Card shadow="sm" p="lg" style={{ minHeight: 450, width: 340, margin: 'auto' }}>
       <Card.Section<typeof Link> component={Link} to={`/${urlProjectName}`}>
         <Image src={imageSrc} height={250} alt={imageAlt} />
       </Card.Section>

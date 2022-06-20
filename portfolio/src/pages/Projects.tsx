@@ -1,4 +1,4 @@
-import { Container, Grid, Group, Text } from '@mantine/core';
+import { Container, Grid, Text } from '@mantine/core';
 
 import SectionTitle from '../components/SectionTitle';
 import ProjectCard from '../components/ProjectCard';
@@ -26,7 +26,7 @@ const Projects = (): JSX.Element => {
         </Text>
 
         <Grid>
-          <Grid.Col xs={12} lg={6} span={6}>
+          <Grid.Col xs={12} lg={6}>
             <ProjectCard
               imageSrc={trainingAppImage}
               imageAlt="Training App Image"
@@ -36,7 +36,7 @@ const Projects = (): JSX.Element => {
               urlProjectName="training-app"
             />
           </Grid.Col>
-          <Grid.Col xs={12} lg={6} span={6}>
+          <Grid.Col xs={12} lg={6}>
             <ProjectCard
               imageSrc={resourcesLinksImage}
               imageAlt="Resource Links Image"
