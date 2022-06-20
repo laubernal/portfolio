@@ -26,9 +26,12 @@ const Header = (): JSX.Element => {
   // Larger than 940 px grid
 
   return (
-    <Container style={{ paddingLeft: 450, paddingTop: 30 }}>
-      <MediaQuery smallerThan={940} styles={{ display: 'none' }}>
-        <Grid grow style={{ color: primaryColor, fontWeight: 500 }}>
+    <Container>
+      <MediaQuery smallerThan={985} styles={{ display: 'none' }}>
+        <Grid
+          grow
+          style={{ color: primaryColor, fontWeight: 500, paddingLeft: 450, paddingTop: 30 }}
+        >
           <Grid.Col span={2}>
             <Anchor underline={false} onClick={() => scrollToSection('aboutMe')}>
               <Text style={headerTextStyles}>About me</Text>
@@ -55,7 +58,7 @@ const Header = (): JSX.Element => {
         </Grid>
       </MediaQuery>
 
-      <MediaQuery largerThan={940} styles={{ display: 'none' }}>
+      <MediaQuery largerThan={985} styles={{ display: 'none' }}>
         <Menu
           trigger="hover"
           size={150}
@@ -67,7 +70,7 @@ const Header = (): JSX.Element => {
           }
           sx={() => ({
             width: '100%',
-            paddingLeft: 300,
+            paddingTop: 30,
           })}
         >
           <Menu.Item onClick={() => scrollToSection('aboutMe')} style={menuItemsStyles}>

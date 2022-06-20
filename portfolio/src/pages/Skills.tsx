@@ -5,18 +5,18 @@ import { textColor } from '../constants';
 
 const Skills = (): JSX.Element => {
   return (
-    <Container id="skills" style={{ color: textColor, paddingTop: 140, paddingBottom: 40 }}>
+    <Container id="skills" style={{ color: textColor, paddingTop: 140, paddingBottom: 80 }}>
       <Container style={{ paddingRight: 80 }}>
         <SectionTitle title="My skills" />
         <Text
           align="justify"
-          style={{ fontSize: 20, paddingLeft: 30, paddingTop: 25, paddingBottom: 50 }}
+          style={{ fontSize: 20, paddingLeft: 30, paddingTop: 40, paddingBottom: 80 }}
         >
           As a self-taught developer I've dedicated a lot of time in learning and applying
           everything learned in real-world applications. I try to focus on writing clean code and
           architecture.
         </Text>
-        <Grid>
+        <Grid style={{ paddingBottom: 100 }}>
           <Grid.Col offset={2} span={4}>
             <List style={{ color: textColor, fontSize: 20, fontWeight: 500 }}>
               <List.Item>Node.js</List.Item>

@@ -7,7 +7,7 @@ interface props {
 }
 
 const SectionTitle = ({ title }: props): JSX.Element => {
-  return <Text style={{ color: primaryColor, fontSize: 35, fontWeight: 700 }}>{title}</Text>;
+  return <Text style={{ color: primaryColor, fontSize: 50, fontWeight: 700 }}>{title}</Text>;
 };
 
 export default SectionTitle;
