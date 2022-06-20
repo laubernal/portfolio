@@ -8,7 +8,9 @@ import ScrollToTop from './components/ScrollToTop';
 
 const App = (): JSX.Element => {
   return (
-    <MantineProvider theme={{ fontFamily: 'Quicksand' }}>
+    <MantineProvider theme={{ fontFamily: 'Quicksand', breakpoints: {
+      xs: 275,
+    } }}>
       <ScrollToTop>
         <Routes>
           <Route path="/" element={<Home />} />
