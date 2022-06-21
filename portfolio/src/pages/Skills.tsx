@@ -1,7 +1,8 @@
 import { Container, Grid, List, Text } from '@mantine/core';
+import { Point } from 'tabler-icons-react';
 
 import SectionTitle from '../components/SectionTitle';
-import { textColor } from '../constants';
+import { secondaryColor, textColor } from '../constants';
 
 const Skills = (): JSX.Element => {
   return (
@@ -18,7 +19,10 @@ const Skills = (): JSX.Element => {
         </Text>
         <Grid style={{ paddingBottom: 100 }}>
           <Grid.Col offset={2} span={4}>
-            <List style={{ color: textColor, fontSize: 20, fontWeight: 500 }}>
+            <List
+              icon={<Point size={25} color={secondaryColor} />}
+              style={{ color: textColor, fontSize: 20, fontWeight: 500 }}
+            >
               <List.Item>Node.js</List.Item>
               <List.Item>JavaScript</List.Item>
               <List.Item>TypeScript</List.Item>
@@ -26,7 +30,10 @@ const Skills = (): JSX.Element => {
             </List>
           </Grid.Col>
           <Grid.Col span={6}>
-            <List style={{ color: textColor, fontSize: 20, fontWeight: 500, paddingLeft: 120 }}>
+            <List
+              icon={<Point size={25} color={secondaryColor} />}
+              style={{ color: textColor, fontSize: 20, fontWeight: 500, paddingLeft: 120 }}
+            >
               <List.Item>PostgreSQL</List.Item>
               <List.Item>React.js</List.Item>
               <List.Item>Hexagonal architecture</List.Item>
