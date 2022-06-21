@@ -27,7 +27,7 @@ const Header = (): JSX.Element => {
 
   return (
     <Container>
-      <MediaQuery smallerThan={985} styles={{ display: 'none' }}>
+      <MediaQuery smallerThan={1000} styles={{ display: 'none' }}>
         <Grid
           grow
           style={{ color: primaryColor, fontWeight: 500, paddingLeft: 450, paddingTop: 30 }}
@@ -58,7 +58,7 @@ const Header = (): JSX.Element => {
         </Grid>
       </MediaQuery>
 
-      <MediaQuery largerThan={985} styles={{ display: 'none' }}>
+      <MediaQuery largerThan={1000} styles={{ display: 'none' }}>
         <Menu
           trigger="hover"
           size={150}

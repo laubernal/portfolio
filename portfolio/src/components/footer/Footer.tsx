@@ -8,12 +8,12 @@ import { nodeWeb, primaryColor, reactWeb, textColor, typescriptWeb } from '../..
 const Footer = (): JSX.Element => {
   return (
     <Container style={{ color: textColor, fontWeight: 400, paddingBottom: 30 }}>
-      <Grid columns={24}>
-        <Grid.Col xs={24} lg={7}>
+      <Grid justify="center" columns={24}>
+        <Grid.Col xs={13} lg={7}>
           <Text style={{ fontSize: 18 }}>Made with 💜 by Laura Bernal</Text>
         </Grid.Col>
 
-        <Grid.Col xs={24} lg={7}>
+        <Grid.Col xs={13} lg={7}>
           <Group>
             <Text style={{ fontSize: 18 }}>Site built with</Text>
 
@@ -55,7 +55,7 @@ const Footer = (): JSX.Element => {
           </Group>
         </Grid.Col>
 
-        <Grid.Col xs={24} lg={10}>
+        <Grid.Col xs={13} lg={10}>
           <Group>
             <Text style={{ fontSize: 18 }}>
               Images designed by&nbsp;
