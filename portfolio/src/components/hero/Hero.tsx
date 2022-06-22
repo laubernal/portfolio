@@ -14,7 +14,7 @@ const Hero = (): JSX.Element => {
             sx={() => ({
               color: textColor,
               fontSize: 35,
-              '@media (max-width: 720px)': { fontSize: 20 },
+              '@media (max-width: 1000px)': { fontSize: '6vw' },
             })}
           >
             HI, MY NAME IS
@@ -28,8 +28,8 @@ const Hero = (): JSX.Element => {
               fontSize: 70,
               fontWeight: 700,
               letterSpacing: 10,
-              '@media (max-width: 720px)': {
-                fontSize: 60,
+              '@media (max-width: 1000px)': {
+                fontSize: '10vw',
               },
             })}
           >
@@ -42,8 +42,8 @@ const Hero = (): JSX.Element => {
               sx={() => ({
                 color: textColor,
                 fontSize: 40,
-                '@media (max-width: 720px)': {
-                  fontSize: 30,
+                '@media (max-width: 1000px)': {
+                  fontSize: '6vw',
                 },
               })}
             >
@@ -55,8 +55,8 @@ const Hero = (): JSX.Element => {
                 color: secondaryColor,
                 fontSize: 40,
                 fontWeight: 500,
-                '@media (max-width: 720px)': {
-                  fontSize: 30,
+                '@media (max-width: 1000px)': {
+                  fontSize: '6vw',
                 },
               })}
             >
