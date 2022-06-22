@@ -30,9 +30,16 @@ const Header = (): JSX.Element => {
       <MediaQuery smallerThan={1000} styles={{ display: 'none' }}>
         <Grid
           grow
-          style={{ color: primaryColor, fontWeight: 500, paddingLeft: 450, paddingTop: 30 }}
+          style={{
+            color: primaryColor,
+            fontWeight: 500,
+            paddingLeft: 450,
+            paddingTop: 30,
+            paddingBottom: 250,
+            textAlign: 'center',
+          }}
         >
-          <Grid.Col span={2}>
+          <Grid.Col span={1}>
             <Anchor underline={false} onClick={() => scrollToSection('aboutMe')}>
               <Text style={headerTextStyles}>About me</Text>
             </Anchor>
@@ -44,7 +51,7 @@ const Header = (): JSX.Element => {
             </Anchor>
           </Grid.Col>
 
-          <Grid.Col span={2}>
+          <Grid.Col span={1}>
             <Anchor underline={false} onClick={() => scrollToSection('projects')}>
               <Text style={headerTextStyles}>Projects</Text>
             </Anchor>
@@ -71,6 +78,7 @@ const Header = (): JSX.Element => {
           sx={() => ({
             width: '100%',
             paddingTop: 30,
+            paddingBottom: 150,
           })}
         >
           <Menu.Item onClick={() => scrollToSection('aboutMe')} style={menuItemsStyles}>

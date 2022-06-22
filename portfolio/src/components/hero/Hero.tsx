@@ -1,4 +1,4 @@
-import { Anchor, Container, Group, Image, Stack, Text } from '@mantine/core';
+import { Anchor, Container, Grid, Group, Image, Text } from '@mantine/core';
 
 import GitHubLogo from '../../images/social/GitHubLogo.png';
 import LinkedInLogo from '../../images/social/LinkedInLogo.png';
@@ -7,17 +7,64 @@ import { primaryColor, linkedInLink, gitHubLink, textColor, secondaryColor } fro
 
 const Hero = (): JSX.Element => {
   return (
-    <Container style={{ paddingTop: 250, paddingBottom: 255 }}>
-      <Stack align="flex-start" spacing={1}>
-        <Text style={{ color: textColor, fontSize: 35 }}>HI, MY NAME IS</Text>
-        <Text style={{ color: primaryColor, fontSize: 70, fontWeight: 700, letterSpacing: 10 }}>
-          LAURA BERNAL
-        </Text>
-        <Group>
-          <Text style={{ color: textColor, fontSize: 40 }}>BACK END</Text>
-          <Text style={{ color: secondaryColor, fontSize: 40, fontWeight: 500 }}>DEVELOPER</Text>
-        </Group>
-      </Stack>
+    <Container style={{ paddingBottom: 255 }}>
+      <Grid>
+        <Grid.Col span={12}>
+          <Text
+            sx={() => ({
+              color: textColor,
+              fontSize: 35,
+              '@media (max-width: 720px)': { fontSize: 20 },
+            })}
+          >
+            HI, MY NAME IS
+          </Text>
+        </Grid.Col>
+        <Grid.Col span={12}>
+          <Text
+            style={{}}
+            sx={() => ({
+              color: primaryColor,
+              fontSize: 70,
+              fontWeight: 700,
+              letterSpacing: 10,
+              '@media (max-width: 720px)': {
+                fontSize: 60,
+              },
+            })}
+          >
+            LAURA BERNAL
+          </Text>
+        </Grid.Col>
+        <Grid.Col span={12}>
+          <Group>
+            <Text
+              sx={() => ({
+                color: textColor,
+                fontSize: 40,
+                '@media (max-width: 720px)': {
+                  fontSize: 30,
+                },
+              })}
+            >
+              BACK END
+            </Text>
+
+            <Text
+              sx={() => ({
+                color: secondaryColor,
+                fontSize: 40,
+                fontWeight: 500,
+                '@media (max-width: 720px)': {
+                  fontSize: 30,
+                },
+              })}
+            >
+              DEVELOPER
+            </Text>
+          </Group>
+        </Grid.Col>
+      </Grid>
 
       <Group style={{ paddingTop: 50 }}>
         <Anchor href={gitHubLink} target="_blank">

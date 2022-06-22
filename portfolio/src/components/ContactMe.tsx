@@ -27,7 +27,7 @@ const ContactMe = (): JSX.Element => {
         paddingBottom: 200,
       }}
     >
-      <Grid style={{ height: 200 }}>
+      <Grid justify="center" style={{ height: 200 }}>
         <Grid.Col
           xs={10}
           lg={6}
