@@ -24,46 +24,77 @@ const ContactMe = (): JSX.Element => {
       style={{
         color: textColor,
         paddingTop: 140,
-        paddingBottom: 200,
+        paddingBottom: 300,
       }}
     >
       <Grid justify="center" style={{ height: 200 }}>
         <Grid.Col
           xs={10}
           lg={6}
-          style={{ backgroundColor: primaryColor, height: 200, width: 300 }}
           sx={() => ({
-            '@media (min-width: 755px)': {
-              height: 350,
+            backgroundColor: primaryColor,
+            height: 200,
+            width: 300,
+            '@media (max-width: 1200px)': {
+              height: 250,
             },
           })}
         >
           <Grid justify="center">
             <Grid.Col>
               <Text
-                style={{
+                sx={() => ({
                   color: 'white',
                   fontSize: 30,
                   fontWeight: 700,
                   paddingTop: 30,
                   paddingBottom: 40,
                   textAlign: 'center',
-                }}
+                  '@media (max-width: 1200px)': {
+                    fontSize: 40,
+                    paddingBottom: 0,
+                  },
+                  '@media (max-width: 755px)': {
+                    fontSize: '6vw',
+                    paddingBottom: 30,
+                  },
+                })}
               >
                 Let's work together
               </Text>
             </Grid.Col>
-            <Grid.Col span={7}>
-              <Anchor href={`mailto: ${mailLink}`} style={anchorStyles}>
-                {mailLink}
-              </Anchor>
-            </Grid.Col>
 
-            <Grid.Col span={3}>
-              <Anchor href={linkedInLink} target="_blank" style={anchorStyles}>
-                linkedin
-              </Anchor>
-            </Grid.Col>
+            <Grid justify="center">
+              <Grid.Col
+                xs={12}
+                lg={9}
+                sx={() => ({
+                  '@media (max-width: 1200px)': {
+                    fontSize: '4vw',
+                    textAlign: 'center',
+                  },
+                })}
+              >
+                <Anchor href={`mailto: ${mailLink}`} style={anchorStyles}>
+                  {mailLink}
+                </Anchor>
+              </Grid.Col>
+
+              <Grid.Col
+                xs={12}
+                lg={3}
+                sx={() => ({
+                  '@media (max-width: 1200px)': {
+                    fontSize: '4vw',
+                    textAlign: 'center',
+                  },
+                })}
+              >
+                <Anchor href={linkedInLink} target="_blank" style={anchorStyles}>
+                  linkedin
+                </Anchor>
+              </Grid.Col>
+            </Grid>
           </Grid>
         </Grid.Col>
 
