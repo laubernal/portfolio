@@ -10,7 +10,11 @@ const ScrollToTopArrow = (): JSX.Element => {
     <Affix position={{ bottom: 30, right: 30 }}>
       <Transition transition="slide-up" mounted={scroll.y > 0}>
         {transitionStyles => (
-          <ActionIcon title='Arrow to scroll to top' style={transitionStyles} onClick={() => scrollTo({ y: 0 })}>
+          <ActionIcon
+            title="Arrow to scroll to top"
+            style={transitionStyles}
+            onClick={() => scrollTo({ y: 0 })}
+          >
             <ArrowBarToUp size={40} strokeWidth={3} color={primaryColor} />
           </ActionIcon>
         )}

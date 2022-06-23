@@ -17,8 +17,9 @@ const Skills = (): JSX.Element => {
           everything learned in real-world applications. I try to focus on writing clean code and
           architecture.
         </Text>
-        <Grid style={{ paddingBottom: 100 }}>
-          <Grid.Col offset={2} span={4}>
+
+        <Grid justify="center" columns={24} style={{ paddingBottom: 100 }}>
+          <Grid.Col xs={15} sm={8} offset={4}>
             <List
               icon={<Point size={25} color={secondaryColor} />}
               style={{ color: textColor, fontSize: 20, fontWeight: 500 }}
@@ -29,10 +30,11 @@ const Skills = (): JSX.Element => {
               <List.Item>Docker</List.Item>
             </List>
           </Grid.Col>
-          <Grid.Col span={6}>
+
+          <Grid.Col xs={15} sm={8} offset={4}>
             <List
               icon={<Point size={25} color={secondaryColor} />}
-              style={{ color: textColor, fontSize: 20, fontWeight: 500, paddingLeft: 120 }}
+              style={{ color: textColor, fontSize: 20, fontWeight: 500 }}
             >
               <List.Item>PostgreSQL</List.Item>
               <List.Item>React.js</List.Item>
