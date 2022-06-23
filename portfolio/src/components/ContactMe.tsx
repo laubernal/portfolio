@@ -21,11 +21,14 @@ const ContactMe = (): JSX.Element => {
   return (
     <Container
       id="contact"
-      style={{
+      sx={() => ({
         color: textColor,
         paddingTop: 140,
         paddingBottom: 300,
-      }}
+        '@media (max-width: 1200px)': {
+          paddingBottom: 400,
+        },
+      })}
     >
       <Grid justify="center" style={{ height: 200 }}>
         <Grid.Col

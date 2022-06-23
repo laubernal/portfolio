@@ -1,13 +1,21 @@
-import { Anchor, Container, Grid, Group, Image, Text, Tooltip } from '@mantine/core';
+import { Anchor, Container, Divider, Grid, Group, Image, Text, Tooltip } from '@mantine/core';
 
 import ReactLogo from '../../images/technologies/ReactLogo.png';
 import NodeLogo from '../../images/technologies/NodeLogo.png';
 import TypescriptLogo from '../../images/technologies/TypeScriptLogo.png';
-import { nodeWeb, primaryColor, reactWeb, textColor, typescriptWeb } from '../../constants';
+import {
+  nodeWeb,
+  primaryColor,
+  reactWeb,
+  secondaryColor,
+  textColor,
+  typescriptWeb,
+} from '../../constants';
 
 const Footer = (): JSX.Element => {
   return (
     <Container style={{ color: textColor, fontWeight: 400, paddingBottom: 30 }}>
+      <Divider color={secondaryColor} size="xs" style={{ paddingBottom: 30 }} />
       <Grid justify="center" columns={24}>
         <Grid.Col xs={13} lg={7}>
           <Text style={{ fontSize: 18 }}>Made with 💜 by Laura Bernal</Text>
