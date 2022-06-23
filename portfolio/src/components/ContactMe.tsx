@@ -78,7 +78,13 @@ const ContactMe = (): JSX.Element => {
                   },
                 })}
               >
-                <Anchor href={`mailto: ${mailLink}`} style={anchorStyles}>
+                <Anchor
+                  href={`mailto: ${mailLink}`}
+                  style={anchorStyles}
+                  sx={() => ({
+                    '@media (max-width: 400px)': { wordBreak: 'break-all' },
+                  })}
+                >
                   {mailLink}
                 </Anchor>
               </Grid.Col>
@@ -88,7 +94,6 @@ const ContactMe = (): JSX.Element => {
                 lg={3}
                 sx={() => ({
                   '@media (max-width: 1200px)': {
-                    fontSize: '4vw',
                     textAlign: 'center',
                   },
                 })}
@@ -101,32 +106,64 @@ const ContactMe = (): JSX.Element => {
           </Grid>
         </Grid.Col>
 
-        <Grid.Col xs={10} lg={6} style={{ backgroundColor: backgroundColor, paddingLeft: 5 }}>
+        <Grid.Col
+          xs={10}
+          lg={6}
+          style={{}}
+          sx={() => ({
+            backgroundColor: backgroundColor,
+            paddingLeft: 5,
+            '@media (max-width: 1200px)': {
+              height: 250,
+            },
+          })}
+        >
           <Grid justify="center">
             <Grid.Col span={12}>
               <Text
-                style={{
+                sx={() => ({
                   color: primaryColor,
                   fontSize: 30,
                   fontWeight: 700,
                   paddingTop: 30,
                   paddingBottom: 40,
                   textAlign: 'center',
-                }}
+                  '@media (max-width: 1200px)': {
+                    fontSize: 40,
+                    paddingBottom: 0,
+                  },
+                  '@media (max-width: 755px)': {
+                    fontSize: '6vw',
+                    paddingBottom: 30,
+                  },
+                })}
               >
                 Take a look at my work
               </Text>
             </Grid.Col>
-            <Grid.Col span={3}>
+
+            <Grid.Col
+              xs={12}
+              lg={3}
+              sx={() => ({
+                '@media (max-width: 1200px)': {
+                  textAlign: 'center',
+                },
+              })}
+            >
               <Anchor
                 href={gitHubLink}
                 target="_blank"
-                style={{
+                sx={() => ({
                   color: textColor,
                   fontSize: 20,
                   fontWeight: 600,
                   textAlign: 'center',
-                }}
+                  '@media (max-width: 400px)': {
+                    fontSize: 18,
+                    textAlign: 'center',
+                  },
+                })}
               >
                 github
               </Anchor>
