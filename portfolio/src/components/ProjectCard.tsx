@@ -21,9 +21,25 @@ const ProjectCard = ({
   urlProjectName,
 }: props): JSX.Element => {
   return (
-    <Card shadow="sm" p="lg" style={{ minHeight: 450, width: 340, margin: 'auto' }}>
+    <Card
+      shadow="sm"
+      p="lg"
+      sx={() => ({
+        minHeight: 450,
+        width: 340,
+        margin: 'auto',
+        '@media (max-width: 500px)': { width: 200 },
+      })}
+    >
       <Card.Section<typeof Link> component={Link} to={`/${urlProjectName}`}>
-        <Image src={imageSrc} height={250} alt={imageAlt} />
+        <Image
+          src={imageSrc}
+          alt={imageAlt}
+          sx={() => ({
+            height: 250,
+            '@media (max-width: 500px)': { width: '100%', height: '100%' },
+          })}
+        />
       </Card.Section>
 
       <Paper>
@@ -38,6 +54,7 @@ const ProjectCard = ({
               paddingTop: 10,
               paddingBottom: 10,
               textDecoration: 'none',
+              textAlign: 'center',
             }}
           >
             {title}
