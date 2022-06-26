@@ -34,7 +34,7 @@ const Projects = (): JSX.Element => {
         </Text>
 
         <Grid justify="center">
-          <Grid.Col xs={12} lg={6}>
+          <Grid.Col xs={12} md={6}>
             <ProjectCard
               imageSrc={trainingAppImage}
               imageAlt="Training App Image"
@@ -44,7 +44,7 @@ const Projects = (): JSX.Element => {
               urlProjectName="training-app"
             />
           </Grid.Col>
-          <Grid.Col xs={12} lg={6}>
+          <Grid.Col xs={12} md={6}>
             <ProjectCard
               imageSrc={resourcesLinksImage}
               imageAlt="Resource Links Image"
