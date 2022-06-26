@@ -17,11 +17,11 @@ const Footer = (): JSX.Element => {
     <Container style={{ color: textColor, fontWeight: 400, paddingBottom: 30 }}>
       <Divider color={secondaryColor} size="xs" style={{ paddingBottom: 30 }} />
       <Grid justify="center" columns={24}>
-        <Grid.Col xs={13} lg={7}>
+        <Grid.Col xs={16} lg={7}>
           <Text style={{ fontSize: 18 }}>Made with 💜 by Laura Bernal</Text>
         </Grid.Col>
 
-        <Grid.Col xs={13} lg={7}>
+        <Grid.Col xs={16} lg={7}>
           <Group>
             <Text style={{ fontSize: 18 }}>Site built with</Text>
 
@@ -63,9 +63,9 @@ const Footer = (): JSX.Element => {
           </Group>
         </Grid.Col>
 
-        <Grid.Col xs={13} lg={10}>
+        <Grid.Col xs={16} lg={10}>
           <Group>
-            <Text style={{ fontSize: 18 }}>
+            <Text style={{ fontSize: 18, wordBreak: 'break-word' }}>
               Images designed by&nbsp;
               <Anchor
                 href="https://www.freepik.com/author/pch-vector"
