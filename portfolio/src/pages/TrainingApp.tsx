@@ -23,9 +23,23 @@ import BackToHomeArrow from '../components/BackToHomeArrow';
 
 const TrainingApp = (): JSX.Element => {
   return (
-    <Container style={{ paddingTop: 200 }}>
+    <Container
+      sx={() => ({
+        paddingTop: 200,
+        '@media (max-width: 1024px)': { paddingTop: 100 },
+      })}
+    >
       <BackToHomeArrow />
-      <Text style={{ color: primaryColor, fontSize: 60, fontWeight: 700, letterSpacing: 5 }}>
+      <Text
+        style={{}}
+        sx={() => ({
+          color: primaryColor,
+          fontSize: 60,
+          fontWeight: 700,
+          letterSpacing: 5,
+          '@media (max-width: 500px)': { fontSize: '16vw' },
+        })}
+      >
         Training app 🏋🏻‍♀️
       </Text>
 
