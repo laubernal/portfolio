@@ -6,7 +6,6 @@ import Hero from '../components/hero/Hero';
 import AboutMe from './AboutMe';
 import Projects from './Projects';
 import Skills from './Skills';
-import ScrollToTopArrow from '../components/ScrollToTopArrow';
 import ContactMe from '../components/ContactMe';
 
 const Home = (): JSX.Element => {
@@ -19,7 +18,6 @@ const Home = (): JSX.Element => {
       <Projects />
       <ContactMe />
       <Footer />
-      <ScrollToTopArrow />
     </Container>
   );
 };

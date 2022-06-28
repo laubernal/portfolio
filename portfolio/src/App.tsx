@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import TrainingApp from './pages/TrainingApp';
 import ResourcesLinks from './pages/ResourcesLinks';
 import ScrollToTop from './components/ScrollToTop';
+import ScrollToTopArrow from './components/ScrollToTopArrow';
 
 const App = (): JSX.Element => {
   return (
@@ -17,6 +18,7 @@ const App = (): JSX.Element => {
           <Route path="/training-app" element={<TrainingApp />} />
           <Route path="/resources-links" element={<ResourcesLinks />} />
         </Routes>
+        <ScrollToTopArrow />
       </ScrollToTop>
     </MantineProvider>
   );

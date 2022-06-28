@@ -14,7 +14,7 @@ import {
 
 const Footer = (): JSX.Element => {
   return (
-    <Container style={{ color: textColor, fontWeight: 400, paddingBottom: 30 }}>
+    <Container style={{ color: textColor, fontWeight: 400, paddingBottom: 30, paddingLeft: 0 }}>
       <Divider color={secondaryColor} size="xs" style={{ paddingBottom: 30 }} />
       <Grid justify="center" columns={24}>
         <Grid.Col xs={16} lg={7}>

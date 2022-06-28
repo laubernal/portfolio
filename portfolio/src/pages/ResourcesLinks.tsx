@@ -17,7 +17,6 @@ import TypescriptLogo from '../images/technologies/TypeScriptLogo.png';
 import PostgreSqlLogo from '../images/technologies/PostgreSqlLogo.png';
 import DockerLogo from '../images/technologies/DockerLogo.png';
 import Footer from '../components/footer/Footer';
-import ScrollToTopArrow from '../components/ScrollToTopArrow';
 import SectionTitle from '../components/SectionTitle';
 import BackToHomeArrow from '../components/BackToHomeArrow';
 
@@ -73,8 +72,9 @@ const ResourcesLinks = (): JSX.Element => {
       <SectionTitle title="Tech stack and explanation" />
 
       <Text style={textStyles}>
-        For this project I used Node.js with TypeScript for the backend, PostgreSQL for the
-        database, and Docker.
+        For this project I used Node.js with TypeScript to build the back end with an hexagonal
+        architecture. For the database I used PostgreSQL and Docker to containerize it so I didn't
+        have to install it locally. Lastly, f¡I used React.js for the front end.
       </Text>
 
       <Group position="center" spacing={50} style={{ paddingBottom: 90 }}>
@@ -171,7 +171,6 @@ const ResourcesLinks = (): JSX.Element => {
       </Text>
 
       <Footer />
-      <ScrollToTopArrow />
     </Container>
   );
 };

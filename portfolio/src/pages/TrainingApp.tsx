@@ -1,6 +1,5 @@
 import { Anchor, Container, Group, Image, Text, Tooltip } from '@mantine/core';
 
-import ReactLogo from '../images/technologies/ReactLogo.png';
 import NodeLogo from '../images/technologies/NodeLogo.png';
 import TypescriptLogo from '../images/technologies/TypeScriptLogo.png';
 import PostgreSqlLogo from '../images/technologies/PostgreSqlLogo.png';
@@ -10,14 +9,12 @@ import {
   nodeWeb,
   postgresqlWeb,
   primaryColor,
-  reactWeb,
   secondaryColor,
   textColor,
   trainingAppGitHubLink,
   typescriptWeb,
 } from '../constants';
 import Footer from '../components/footer/Footer';
-import ScrollToTopArrow from '../components/ScrollToTopArrow';
 import SectionTitle from '../components/SectionTitle';
 import BackToHomeArrow from '../components/BackToHomeArrow';
 
@@ -43,7 +40,7 @@ const TrainingApp = (): JSX.Element => {
         Training app 🏋🏻‍♀️
       </Text>
 
-      <Container style={{ paddingBottom: 90 }}>
+      <Container style={{ paddingBottom: 90, paddingLeft: 0 }}>
         <Text style={{ color: textColor, fontSize: 20, paddingTop: 40, paddingBottom: 40 }}>
           Training app is an application that allows you to keep track of your gym sessions so you
           can see your progression.
@@ -65,15 +62,16 @@ const TrainingApp = (): JSX.Element => {
         progressing and how I was performing. Later that year I started learning to code so I
         thought it would be a great idea if I coded my own app to keep track of my trainings. <br />
         <br /> My first goal was just to save the exercises for each training, with it's weights and
-        reps. In the future, my goal is to add graphs so you can see in a clear way your evolution
-        with your weights in every exercise.
+        reps. In the future, my goal is to add graphics so you can see in a clearer way your
+        evolution with your weights in every exercise.
       </Text>
 
       <SectionTitle title="Tech stack and explanation" />
 
-      <Text style={{ color: textColor, fontSize: 20, paddingTop: 25, paddingBottom: 30 }}>
-        For this project I used Node.js with TypeScript for the backend, PostgreSQL for the
-        database, and Docker.
+      <Text style={{ color: textColor, fontSize: 20, paddingTop: 25, paddingBottom: 50 }}>
+        For this project I used Node.js with TypeScript to build the backend with an hexagonal
+        architecture. For the database I used PostgreSQL and Docker to containerize it so I didn't
+        have to install it locally.
       </Text>
 
       <Group position="center" spacing={50} style={{ paddingBottom: 90 }}>
@@ -100,19 +98,6 @@ const TrainingApp = (): JSX.Element => {
         >
           <Anchor href={typescriptWeb} target="_blank">
             <Image src={TypescriptLogo} alt="TypeScript logo" />
-          </Anchor>
-        </Tooltip>
-
-        <Tooltip
-          label="React"
-          withArrow
-          position="bottom"
-          transition="slide-down"
-          transitionDuration={300}
-          transitionTimingFunction="ease"
-        >
-          <Anchor href={reactWeb} target="_blank">
-            <Image src={ReactLogo} alt="React logo" />
           </Anchor>
         </Tooltip>
 
@@ -146,31 +131,23 @@ const TrainingApp = (): JSX.Element => {
       <SectionTitle title="Problems and thought process" />
 
       <Text style={{ color: textColor, fontSize: 20, paddingTop: 25, paddingBottom: 90 }}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae placerat tellus. Aliquam
-        pulvinar, orci sit amet condimentum auctor, leo turpis venenatis lectus, sit amet porttitor
-        risus odio sit amet tortor. In eget odio ut est maximus elementum id ac tellus. Pellentesque
-        tincidunt nisl ac nulla placerat, at sagittis massa dictum. Morbi gravida dui nec nisl
-        sollicitudin iaculis. Maecenas velit quam, finibus vitae lacinia eget, tristique nec ipsum.
-        Nulla facilisi. Maecenas at justo eros. Aenean auctor lectus et fermentum posuere. Ut metus
-        purus, tempus id nulla at, semper fermentum ligula. Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit. Pellentesque convallis eu mauris vel feugiat.
+        This was my first project applying hexagonal architecture so at the beginning it was hard to
+        code without having a solid understanding and clear vision of how the hexagonal architecture
+        works. But as I kept researching and coding it became a lot clearer and I started to
+        understand the benefits of using it. <br /> <br /> At the beginning I used MySQL as my
+        database but later I changed it to PostgreSQL so thanks to the hexagonal architecture it was
+        very easy to make that change. <br /> <br /> Another challenge I faced was handling complex
+        objects and making operations with them.
       </Text>
 
       <SectionTitle title="Lessons learned" />
 
-      <Text style={{ color: textColor, fontSize: 20, paddingTop: 25, paddingBottom: 90 }}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae placerat tellus. Aliquam
-        pulvinar, orci sit amet condimentum auctor, leo turpis venenatis lectus, sit amet porttitor
-        risus odio sit amet tortor. In eget odio ut est maximus elementum id ac tellus. Pellentesque
-        tincidunt nisl ac nulla placerat, at sagittis massa dictum. Morbi gravida dui nec nisl
-        sollicitudin iaculis. Maecenas velit quam, finibus vitae lacinia eget, tristique nec ipsum.
-        Nulla facilisi. Maecenas at justo eros. Aenean auctor lectus et fermentum posuere. Ut metus
-        purus, tempus id nulla at, semper fermentum ligula. Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit. Pellentesque convallis eu mauris vel feugiat.
+      <Text style={{ color: textColor, fontSize: 20, paddingTop: 25, paddingBottom: 120 }}>
+        This project has helped me to solidify my knowledge of hexagonal archicture and its
+        benefits. Also I learned a lot more on TypeScript and how to handle complex objects of data.
       </Text>
 
       <Footer />
-      <ScrollToTopArrow />
     </Container>
   );
 };

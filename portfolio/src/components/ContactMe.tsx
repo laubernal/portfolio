@@ -15,8 +15,6 @@ const anchorStyles = {
   fontWeight: 600,
 };
 
-// 888 px to 1 column
-
 const ContactMe = (): JSX.Element => {
   return (
     <Container
