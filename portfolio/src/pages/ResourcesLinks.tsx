@@ -48,8 +48,15 @@ const ResourcesLinks = (): JSX.Element => {
         Resources links 🔗
       </Text>
 
-      <Container style={{ paddingBottom: 90 }}>
-        <Text style={{ color: TEXT_COLOR, fontSize: 20, paddingTop: 40, paddingBottom: 40 }}>
+      <Container style={{ paddingBottom: 90, paddingLeft: 0 }}>
+        <Text
+          style={{
+            color: TEXT_COLOR,
+            fontSize: 20,
+            paddingTop: 40,
+            paddingBottom: 40,
+          }}
+        >
           Resources links is an application that allows you to keep all the links of resources that
           you want to look for in the future in one place.
         </Text>
@@ -178,16 +185,17 @@ const ResourcesLinks = (): JSX.Element => {
       <SectionTitle title="Problems and thought process" />
 
       <Text style={textStyles}>
-        This was my first project using React.js and I faced the complexity of state handling in an
-        SPA.
+        As my first project using React.js I faced the complexity of state handling. I had to
+        understand how the state works and how to manage it.
       </Text>
 
       <SectionTitle title="Lessons learned" />
 
       <Text style={{ color: TEXT_COLOR, fontSize: 20, paddingTop: 25, paddingBottom: 120 }}>
-        This was my second project using hexagonal architecture so I used it to solidify more my
-        knowledge. Since the app doesn't have much business logic it was more focused in learning
-        the front end side and I have found the complexity of handling states in an SPA.
+        This was my second project implementing an hexagonal architecture so it helped me
+        solidifying my knowledge. Since the app doesn't have much business logic I focused in
+        learning the front end side and I have found the complexity of handling states in an SPA. I
+        have tried to improve my coding skills to make it more readable.
       </Text>
 
       <Footer />

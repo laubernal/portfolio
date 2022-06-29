@@ -146,7 +146,7 @@ const TrainingApp = (): JSX.Element => {
 
       <Text style={{ color: TEXT_COLOR, fontSize: 20, paddingTop: 25, paddingBottom: 120 }}>
         This project has helped me to solidify my knowledge of hexagonal architecture and its
-        benefits. Also I learned a lot more on TypeScript and how to handle complex objects of data.
+        benefits . Also I learned a lot more on TypeScript and how to handle complex objects of data.
       </Text>
 
       <Footer />
