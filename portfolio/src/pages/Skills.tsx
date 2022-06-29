@@ -2,11 +2,11 @@ import { Container, Grid, List, Text } from '@mantine/core';
 import { Point } from 'tabler-icons-react';
 
 import SectionTitle from '../components/SectionTitle';
-import { secondaryColor, textColor } from '../constants';
+import { SECONDARY_COLOR, TEXT_COLOR } from '../constants';
 
 const Skills = (): JSX.Element => {
   return (
-    <Container id="skills" style={{ color: textColor, paddingTop: 140, paddingBottom: 80 }}>
+    <Container id="skills" style={{ color: TEXT_COLOR, paddingTop: 140, paddingBottom: 80 }}>
       <Container
         sx={() => ({
           paddingRight: 80,
@@ -32,9 +32,9 @@ const Skills = (): JSX.Element => {
         <Grid justify="left" columns={24} style={{ paddingBottom: 100 }}>
           <Grid.Col xs={15} sm={8} offset={4}>
             <List
-              icon={<Point size={25} color={secondaryColor} />}
+              icon={<Point size={25} color={SECONDARY_COLOR} />}
               sx={() => ({
-                color: textColor,
+                color: TEXT_COLOR,
                 fontSize: 20,
                 fontWeight: 500,
                 '@media (max-width: 500px)': {
@@ -53,9 +53,9 @@ const Skills = (): JSX.Element => {
 
           <Grid.Col xs={15} sm={8} offset={4}>
             <List
-              icon={<Point size={25} color={secondaryColor} />}
+              icon={<Point size={25} color={SECONDARY_COLOR} />}
               sx={() => ({
-                color: textColor,
+                color: TEXT_COLOR,
                 fontSize: 20,
                 fontWeight: 500,
                 '@media (max-width: 500px)': { fontSize: '6vw' },

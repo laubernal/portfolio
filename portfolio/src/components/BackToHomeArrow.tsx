@@ -1,14 +1,14 @@
 import { ActionIcon, Container, Group, Text } from '@mantine/core';
 import { Link } from 'react-router-dom';
 import { ArrowLeft } from 'tabler-icons-react';
-import { primaryColor } from '../constants';
+import { PRIMARY_COLOR } from '../constants';
 
 const BackToHomeArrow = (): JSX.Element => {
   return (
     <Container style={{ paddingBottom: 50 }}>
       <Group>
         <ActionIcon<typeof Link> component={Link} to="/" title="Back arrow">
-          <ArrowLeft strokeWidth={3} color={primaryColor} />
+          <ArrowLeft strokeWidth={3} color={PRIMARY_COLOR} />
         </ActionIcon>
         <ActionIcon<typeof Link>
           component={Link}
@@ -18,7 +18,7 @@ const BackToHomeArrow = (): JSX.Element => {
         >
           <Text
             style={{
-              color: primaryColor,
+              color: PRIMARY_COLOR,
               fontSize: 20,
               fontWeight: 500,
             }}

@@ -2,7 +2,7 @@ import { Container, Grid, Text } from '@mantine/core';
 
 import SectionTitle from '../components/SectionTitle';
 import ProjectCard from '../components/ProjectCard';
-import { trainingAppGitHubLink, resourceLinksGitHubLink, textColor } from '../constants';
+import { TRAINING_APP_GITHUB_LINK, RESOURCES_LINKS_GITHUB_LINK, TEXT_COLOR } from '../constants';
 import trainingAppImage from '../images/projects/trainingAppImage.jpg';
 import resourcesLinksImage from '../images/projects/resourcesLinksImage.jpg';
 
@@ -21,7 +21,7 @@ const Projects = (): JSX.Element => {
           align="justify"
           style={{}}
           sx={() => ({
-            color: textColor,
+            color: TEXT_COLOR,
             fontSize: 20,
             paddingLeft: 30,
             paddingTop: 25,
@@ -40,7 +40,7 @@ const Projects = (): JSX.Element => {
               imageAlt="Training App Image"
               title="Training app"
               descriptionPreview="A web app to help you keep track of your workout weights and see your evolution"
-              link={trainingAppGitHubLink}
+              link={TRAINING_APP_GITHUB_LINK}
               urlProjectName="training-app"
             />
           </Grid.Col>
@@ -50,7 +50,7 @@ const Projects = (): JSX.Element => {
               imageAlt="Resource Links Image"
               title="Resources links"
               descriptionPreview="A web app to save links of interesting resources in one place"
-              link={resourceLinksGitHubLink}
+              link={RESOURCES_LINKS_GITHUB_LINK}
               urlProjectName="resources-links"
             />
           </Grid.Col>

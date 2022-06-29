@@ -4,18 +4,18 @@ import ReactLogo from '../../images/technologies/ReactLogo.png';
 import NodeLogo from '../../images/technologies/NodeLogo.png';
 import TypescriptLogo from '../../images/technologies/TypeScriptLogo.png';
 import {
-  nodeWeb,
-  primaryColor,
-  reactWeb,
-  secondaryColor,
-  textColor,
-  typescriptWeb,
+  NODE_WEB,
+  PRIMARY_COLOR,
+  REACT_WEB,
+  SECONDARY_COLOR,
+  TEXT_COLOR,
+  TYPESCRIPT_WEB,
 } from '../../constants';
 
 const Footer = (): JSX.Element => {
   return (
-    <Container style={{ color: textColor, fontWeight: 400, paddingBottom: 30, paddingLeft: 0 }}>
-      <Divider color={secondaryColor} size="xs" style={{ paddingBottom: 30 }} />
+    <Container style={{ color: TEXT_COLOR, fontWeight: 400, paddingBottom: 30, paddingLeft: 0 }}>
+      <Divider color={SECONDARY_COLOR} size="xs" style={{ paddingBottom: 30 }} />
       <Grid justify="center" columns={24}>
         <Grid.Col xs={16} lg={7}>
           <Text style={{ fontSize: 18 }}>Made with 💜 by Laura Bernal</Text>
@@ -32,7 +32,7 @@ const Footer = (): JSX.Element => {
               transitionDuration={300}
               transitionTimingFunction="ease"
             >
-              <Anchor href={reactWeb} target="_blank">
+              <Anchor href={REACT_WEB} target="_blank">
                 <Image width={25} height={25} src={ReactLogo} alt="React logo" />
               </Anchor>
             </Tooltip>
@@ -44,7 +44,7 @@ const Footer = (): JSX.Element => {
               transitionDuration={300}
               transitionTimingFunction="ease"
             >
-              <Anchor href={nodeWeb} target="_blank">
+              <Anchor href={NODE_WEB} target="_blank">
                 <Image width={40} height={25} src={NodeLogo} alt="Node logo" />
               </Anchor>
             </Tooltip>
@@ -56,7 +56,7 @@ const Footer = (): JSX.Element => {
               transitionDuration={300}
               transitionTimingFunction="ease"
             >
-              <Anchor href={typescriptWeb} target="_blank">
+              <Anchor href={TYPESCRIPT_WEB} target="_blank">
                 <Image width={25} height={25} src={TypescriptLogo} alt="TypeScript logo" />
               </Anchor>
             </Tooltip>
@@ -70,7 +70,7 @@ const Footer = (): JSX.Element => {
               <Anchor
                 href="https://www.freepik.com/author/pch-vector"
                 target="_blank"
-                style={{ color: primaryColor, fontWeight: 500 }}
+                style={{ color: PRIMARY_COLOR, fontWeight: 500 }}
               >
                 Pch.vector&nbsp;
               </Anchor>
@@ -78,7 +78,7 @@ const Footer = (): JSX.Element => {
               <Anchor
                 href="https://www.freepik.com/"
                 target="_blank"
-                style={{ color: primaryColor, fontWeight: 500 }}
+                style={{ color: PRIMARY_COLOR, fontWeight: 500 }}
               >
                 Freepik
               </Anchor>

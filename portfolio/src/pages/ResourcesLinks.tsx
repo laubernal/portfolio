@@ -1,26 +1,30 @@
 import { Anchor, Container, Group, Image, Text, Tooltip } from '@mantine/core';
 
 import {
-  dockerWeb,
-  nodeWeb,
-  postgresqlWeb,
-  primaryColor,
-  reactWeb,
-  resourceLinksGitHubLink,
-  secondaryColor,
-  textColor,
-  typescriptWeb,
+  DOCKER_WEB,
+  MANTINE_WEB,
+  NODE_WEB,
+  POSTGRESQL_WEB,
+  PRIMARY_COLOR,
+  PRISMA_WEB,
+  REACT_WEB,
+  RESOURCES_LINKS_GITHUB_LINK,
+  SECONDARY_COLOR,
+  TEXT_COLOR,
+  TYPESCRIPT_WEB,
 } from '../constants';
 import ReactLogo from '../images/technologies/ReactLogo.png';
 import NodeLogo from '../images/technologies/NodeLogo.png';
 import TypescriptLogo from '../images/technologies/TypeScriptLogo.png';
 import PostgreSqlLogo from '../images/technologies/PostgreSqlLogo.png';
+import PrismaLogo from '../images/technologies/PrismaLogo.png';
+import MantineLogo from '../images/technologies/MantineLogo.png';
 import DockerLogo from '../images/technologies/DockerLogo.png';
 import Footer from '../components/footer/Footer';
 import SectionTitle from '../components/SectionTitle';
 import BackToHomeArrow from '../components/BackToHomeArrow';
 
-const textStyles = { color: textColor, fontSize: 20, paddingTop: 25, paddingBottom: 90 };
+const textStyles = { color: TEXT_COLOR, fontSize: 20, paddingTop: 25, paddingBottom: 90 };
 
 const ResourcesLinks = (): JSX.Element => {
   return (
@@ -34,7 +38,7 @@ const ResourcesLinks = (): JSX.Element => {
       <Text
         style={{}}
         sx={() => ({
-          color: primaryColor,
+          color: PRIMARY_COLOR,
           fontSize: 60,
           fontWeight: 700,
           letterSpacing: 5,
@@ -45,15 +49,15 @@ const ResourcesLinks = (): JSX.Element => {
       </Text>
 
       <Container style={{ paddingBottom: 90 }}>
-        <Text style={{ color: textColor, fontSize: 20, paddingTop: 40, paddingBottom: 40 }}>
+        <Text style={{ color: TEXT_COLOR, fontSize: 20, paddingTop: 40, paddingBottom: 40 }}>
           Resources links is an application that allows you to keep all the links of resources that
-          you want to look for in the future all in one place.
+          you want to look for in the future in one place.
         </Text>
 
         <Anchor
-          href={resourceLinksGitHubLink}
+          href={RESOURCES_LINKS_GITHUB_LINK}
           target="_blank"
-          style={{ color: secondaryColor, fontWeight: 500, paddingBottom: 60 }}
+          style={{ color: SECONDARY_COLOR, fontWeight: 500, paddingBottom: 60 }}
         >
           <Text>VIEW SOURCE CODE &#8250;</Text>
         </Anchor>
@@ -73,8 +77,9 @@ const ResourcesLinks = (): JSX.Element => {
 
       <Text style={textStyles}>
         For this project I used Node.js with TypeScript to build the back end with an hexagonal
-        architecture. For the database I used PostgreSQL and Docker to containerize it so I didn't
-        have to install it locally. Lastly, f¡I used React.js for the front end.
+        architecture. For the database I used PostgreSQL with Prisma and Docker to containerize it
+        so I didn't have to install it locally. Lastly, I used React.js for the front end with the
+        help of Mantine's components.
       </Text>
 
       <Group position="center" spacing={50} style={{ paddingBottom: 90 }}>
@@ -86,7 +91,7 @@ const ResourcesLinks = (): JSX.Element => {
           transitionDuration={300}
           transitionTimingFunction="ease"
         >
-          <Anchor href={nodeWeb} target="_blank">
+          <Anchor href={NODE_WEB} target="_blank">
             <Image src={NodeLogo} alt="Node logo" />
           </Anchor>
         </Tooltip>
@@ -99,21 +104,8 @@ const ResourcesLinks = (): JSX.Element => {
           transitionDuration={300}
           transitionTimingFunction="ease"
         >
-          <Anchor href={typescriptWeb} target="_blank">
+          <Anchor href={TYPESCRIPT_WEB} target="_blank">
             <Image src={TypescriptLogo} alt="TypeScript logo" />
-          </Anchor>
-        </Tooltip>
-
-        <Tooltip
-          label="React"
-          withArrow
-          position="bottom"
-          transition="slide-down"
-          transitionDuration={300}
-          transitionTimingFunction="ease"
-        >
-          <Anchor href={reactWeb} target="_blank">
-            <Image src={ReactLogo} alt="React logo" />
           </Anchor>
         </Tooltip>
 
@@ -125,8 +117,21 @@ const ResourcesLinks = (): JSX.Element => {
           transitionDuration={300}
           transitionTimingFunction="ease"
         >
-          <Anchor href={postgresqlWeb} target="_blank">
+          <Anchor href={POSTGRESQL_WEB} target="_blank">
             <Image src={PostgreSqlLogo} alt="PostgreSQL logo" />
+          </Anchor>
+        </Tooltip>
+
+        <Tooltip
+          label="Prisma"
+          withArrow
+          position="bottom"
+          transition="slide-down"
+          transitionDuration={300}
+          transitionTimingFunction="ease"
+        >
+          <Anchor href={PRISMA_WEB} target="_blank">
+            <Image height={48} width={48} src={PrismaLogo} alt="Prisma logo" />
           </Anchor>
         </Tooltip>
 
@@ -138,8 +143,34 @@ const ResourcesLinks = (): JSX.Element => {
           transitionDuration={300}
           transitionTimingFunction="ease"
         >
-          <Anchor href={dockerWeb} target="_blank">
+          <Anchor href={DOCKER_WEB} target="_blank">
             <Image src={DockerLogo} alt="Docker logo" />
+          </Anchor>
+        </Tooltip>
+
+        <Tooltip
+          label="React"
+          withArrow
+          position="bottom"
+          transition="slide-down"
+          transitionDuration={300}
+          transitionTimingFunction="ease"
+        >
+          <Anchor href={REACT_WEB} target="_blank">
+            <Image src={ReactLogo} alt="React logo" />
+          </Anchor>
+        </Tooltip>
+
+        <Tooltip
+          label="Mantine"
+          withArrow
+          position="bottom"
+          transition="slide-down"
+          transitionDuration={300}
+          transitionTimingFunction="ease"
+        >
+          <Anchor href={MANTINE_WEB} target="_blank">
+            <Image height={48} width={48} src={MantineLogo} alt="Mantine logo" />
           </Anchor>
         </Tooltip>
       </Group>
@@ -147,27 +178,16 @@ const ResourcesLinks = (): JSX.Element => {
       <SectionTitle title="Problems and thought process" />
 
       <Text style={textStyles}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae placerat tellus. Aliquam
-        pulvinar, orci sit amet condimentum auctor, leo turpis venenatis lectus, sit amet porttitor
-        risus odio sit amet tortor. In eget odio ut est maximus elementum id ac tellus. Pellentesque
-        tincidunt nisl ac nulla placerat, at sagittis massa dictum. Morbi gravida dui nec nisl
-        sollicitudin iaculis. Maecenas velit quam, finibus vitae lacinia eget, tristique nec ipsum.
-        Nulla facilisi. Maecenas at justo eros. Aenean auctor lectus et fermentum posuere. Ut metus
-        purus, tempus id nulla at, semper fermentum ligula. Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit. Pellentesque convallis eu mauris vel feugiat.
+        This was my first project using React.js and I faced the complexity of state handling in an
+        SPA.
       </Text>
 
       <SectionTitle title="Lessons learned" />
 
-      <Text style={textStyles}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae placerat tellus. Aliquam
-        pulvinar, orci sit amet condimentum auctor, leo turpis venenatis lectus, sit amet porttitor
-        risus odio sit amet tortor. In eget odio ut est maximus elementum id ac tellus. Pellentesque
-        tincidunt nisl ac nulla placerat, at sagittis massa dictum. Morbi gravida dui nec nisl
-        sollicitudin iaculis. Maecenas velit quam, finibus vitae lacinia eget, tristique nec ipsum.
-        Nulla facilisi. Maecenas at justo eros. Aenean auctor lectus et fermentum posuere. Ut metus
-        purus, tempus id nulla at, semper fermentum ligula. Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit. Pellentesque convallis eu mauris vel feugiat.
+      <Text style={{ color: TEXT_COLOR, fontSize: 20, paddingTop: 25, paddingBottom: 120 }}>
+        This was my second project using hexagonal architecture so I used it to solidify more my
+        knowledge. Since the app doesn't have much business logic it was more focused in learning
+        the front end side and I have found the complexity of handling states in an SPA.
       </Text>
 
       <Footer />

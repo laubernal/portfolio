@@ -2,7 +2,7 @@ import { ActionIcon, Affix, Transition } from '@mantine/core';
 import { useWindowScroll } from '@mantine/hooks';
 import { ArrowBarToUp } from 'tabler-icons-react';
 
-import { primaryColor } from '../constants';
+import { PRIMARY_COLOR } from '../constants';
 
 const ScrollToTopArrow = (): JSX.Element => {
   const [scroll, scrollTo] = useWindowScroll();
@@ -15,7 +15,7 @@ const ScrollToTopArrow = (): JSX.Element => {
             style={transitionStyles}
             onClick={() => scrollTo({ y: 0 })}
           >
-            <ArrowBarToUp size={40} strokeWidth={3} color={primaryColor} />
+            <ArrowBarToUp size={40} strokeWidth={3} color={PRIMARY_COLOR} />
           </ActionIcon>
         )}
       </Transition>

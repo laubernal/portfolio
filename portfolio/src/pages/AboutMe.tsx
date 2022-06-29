@@ -1,7 +1,7 @@
 import { Container, Text } from '@mantine/core';
 
 import SectionTitle from '../components/SectionTitle';
-import { textColor } from '../constants';
+import { TEXT_COLOR } from '../constants';
 
 const calculateAge = (): number => {
   const birthdayDate = new Date(1995, 9, 17);
@@ -29,7 +29,7 @@ const AboutMe = (): JSX.Element => {
         <Text
           align="justify"
           sx={() => ({
-            color: textColor,
+            color: TEXT_COLOR,
             fontSize: 20,
             paddingLeft: 30,
             paddingTop: 40,

@@ -1,16 +1,16 @@
 import { Container, Grid, Text, Anchor, Menu, UnstyledButton, MediaQuery } from '@mantine/core';
 import { Menu2 } from 'tabler-icons-react';
 
-import { primaryColor, textColor } from '../../constants';
+import { PRIMARY_COLOR, TEXT_COLOR } from '../../constants';
 
 const headerTextStyles = {
   fontSize: 20,
   fontWeight: 500,
-  color: primaryColor,
+  color: PRIMARY_COLOR,
 };
 
 const menuItemsStyles = {
-  color: textColor,
+  color: TEXT_COLOR,
   fontSize: 16,
   fontWeight: 500,
 };
@@ -31,7 +31,7 @@ const Header = (): JSX.Element => {
         <Grid
           grow
           style={{
-            color: primaryColor,
+            color: PRIMARY_COLOR,
             fontWeight: 500,
             paddingLeft: 450,
             paddingTop: 30,
@@ -72,7 +72,7 @@ const Header = (): JSX.Element => {
           withArrow
           control={
             <UnstyledButton>
-              <Menu2 size={36} color={primaryColor} />
+              <Menu2 size={36} color={PRIMARY_COLOR} />
             </UnstyledButton>
           }
           sx={() => ({

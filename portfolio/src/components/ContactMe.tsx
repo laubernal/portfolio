@@ -1,12 +1,12 @@
 import { Anchor, Container, Grid, Text } from '@mantine/core';
 
 import {
-  backgroundColor,
-  gitHubLink,
-  linkedInLink,
-  mailLink,
-  primaryColor,
-  textColor,
+  BACKGROUND_COLOR,
+  GITHUB_LINK,
+  LINKEDIN_LINK,
+  MAIL_LINK,
+  PRIMARY_COLOR,
+  TEXT_COLOR,
 } from '../constants';
 
 const anchorStyles = {
@@ -20,7 +20,7 @@ const ContactMe = (): JSX.Element => {
     <Container
       id="contact"
       sx={() => ({
-        color: textColor,
+        color: TEXT_COLOR,
         paddingTop: 140,
         paddingBottom: 300,
         '@media (max-width: 1200px)': {
@@ -33,7 +33,7 @@ const ContactMe = (): JSX.Element => {
           xs={10}
           lg={6}
           sx={() => ({
-            backgroundColor: primaryColor,
+            backgroundColor: PRIMARY_COLOR,
             height: 200,
             width: 300,
             '@media (max-width: 1200px)': {
@@ -77,13 +77,13 @@ const ContactMe = (): JSX.Element => {
                 })}
               >
                 <Anchor
-                  href={`mailto: ${mailLink}`}
+                  href={`mailto: ${MAIL_LINK}`}
                   style={anchorStyles}
                   sx={() => ({
                     '@media (max-width: 400px)': { wordBreak: 'break-all' },
                   })}
                 >
-                  {mailLink}
+                  {MAIL_LINK}
                 </Anchor>
               </Grid.Col>
 
@@ -96,7 +96,7 @@ const ContactMe = (): JSX.Element => {
                   },
                 })}
               >
-                <Anchor href={linkedInLink} target="_blank" style={anchorStyles}>
+                <Anchor href={LINKEDIN_LINK} target="_blank" style={anchorStyles}>
                   linkedin
                 </Anchor>
               </Grid.Col>
@@ -109,7 +109,7 @@ const ContactMe = (): JSX.Element => {
           lg={6}
           style={{}}
           sx={() => ({
-            backgroundColor: backgroundColor,
+            backgroundColor: BACKGROUND_COLOR,
             paddingLeft: 5,
             '@media (max-width: 1200px)': {
               height: 250,
@@ -120,7 +120,7 @@ const ContactMe = (): JSX.Element => {
             <Grid.Col span={12}>
               <Text
                 sx={() => ({
-                  color: primaryColor,
+                  color: PRIMARY_COLOR,
                   fontSize: 30,
                   fontWeight: 700,
                   paddingTop: 30,
@@ -150,10 +150,10 @@ const ContactMe = (): JSX.Element => {
               })}
             >
               <Anchor
-                href={gitHubLink}
+                href={GITHUB_LINK}
                 target="_blank"
                 sx={() => ({
-                  color: textColor,
+                  color: TEXT_COLOR,
                   fontSize: 20,
                   fontWeight: 600,
                   textAlign: 'center',

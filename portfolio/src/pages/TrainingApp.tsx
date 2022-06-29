@@ -5,18 +5,20 @@ import TypescriptLogo from '../images/technologies/TypeScriptLogo.png';
 import PostgreSqlLogo from '../images/technologies/PostgreSqlLogo.png';
 import DockerLogo from '../images/technologies/DockerLogo.png';
 import {
-  dockerWeb,
-  nodeWeb,
-  postgresqlWeb,
-  primaryColor,
-  secondaryColor,
-  textColor,
-  trainingAppGitHubLink,
-  typescriptWeb,
+  DOCKER_WEB,
+  NODE_WEB,
+  POSTGRESQL_WEB,
+  PRIMARY_COLOR,
+  SECONDARY_COLOR,
+  TEXT_COLOR,
+  TRAINING_APP_GITHUB_LINK,
+  TYPESCRIPT_WEB,
 } from '../constants';
 import Footer from '../components/footer/Footer';
 import SectionTitle from '../components/SectionTitle';
 import BackToHomeArrow from '../components/BackToHomeArrow';
+
+const textStyles = { color: TEXT_COLOR, fontSize: 20, paddingTop: 25, paddingBottom: 90 };
 
 const TrainingApp = (): JSX.Element => {
   return (
@@ -30,7 +32,7 @@ const TrainingApp = (): JSX.Element => {
       <Text
         style={{}}
         sx={() => ({
-          color: primaryColor,
+          color: PRIMARY_COLOR,
           fontSize: 60,
           fontWeight: 700,
           letterSpacing: 5,
@@ -41,15 +43,15 @@ const TrainingApp = (): JSX.Element => {
       </Text>
 
       <Container style={{ paddingBottom: 90, paddingLeft: 0 }}>
-        <Text style={{ color: textColor, fontSize: 20, paddingTop: 40, paddingBottom: 40 }}>
+        <Text style={{ color: TEXT_COLOR, fontSize: 20, paddingTop: 40, paddingBottom: 40 }}>
           Training app is an application that allows you to keep track of your gym sessions so you
           can see your progression.
         </Text>
 
         <Anchor
-          href={trainingAppGitHubLink}
+          href={TRAINING_APP_GITHUB_LINK}
           target="_blank"
-          style={{ color: secondaryColor, fontWeight: 500, paddingBottom: 60 }}
+          style={{ color: SECONDARY_COLOR, fontWeight: 500, paddingBottom: 60 }}
         >
           <Text>VIEW SOURCE CODE &#8250;</Text>
         </Anchor>
@@ -57,7 +59,7 @@ const TrainingApp = (): JSX.Element => {
 
       <SectionTitle title="Purpose and goals" />
 
-      <Text style={{ color: textColor, fontSize: 20, paddingTop: 25, paddingBottom: 90 }}>
+      <Text style={textStyles}>
         In 2019 I started going to the gym, and two years later I wanted to know how I was
         progressing and how I was performing. Later that year I started learning to code so I
         thought it would be a great idea if I coded my own app to keep track of my trainings. <br />
@@ -68,7 +70,7 @@ const TrainingApp = (): JSX.Element => {
 
       <SectionTitle title="Tech stack and explanation" />
 
-      <Text style={{ color: textColor, fontSize: 20, paddingTop: 25, paddingBottom: 50 }}>
+      <Text style={textStyles}>
         For this project I used Node.js with TypeScript to build the backend with an hexagonal
         architecture. For the database I used PostgreSQL and Docker to containerize it so I didn't
         have to install it locally.
@@ -83,7 +85,7 @@ const TrainingApp = (): JSX.Element => {
           transitionDuration={300}
           transitionTimingFunction="ease"
         >
-          <Anchor href={nodeWeb} target="_blank">
+          <Anchor href={NODE_WEB} target="_blank">
             <Image src={NodeLogo} alt="Node logo" />
           </Anchor>
         </Tooltip>
@@ -96,7 +98,7 @@ const TrainingApp = (): JSX.Element => {
           transitionDuration={300}
           transitionTimingFunction="ease"
         >
-          <Anchor href={typescriptWeb} target="_blank">
+          <Anchor href={TYPESCRIPT_WEB} target="_blank">
             <Image src={TypescriptLogo} alt="TypeScript logo" />
           </Anchor>
         </Tooltip>
@@ -109,7 +111,7 @@ const TrainingApp = (): JSX.Element => {
           transitionDuration={300}
           transitionTimingFunction="ease"
         >
-          <Anchor href={postgresqlWeb} target="_blank">
+          <Anchor href={POSTGRESQL_WEB} target="_blank">
             <Image src={PostgreSqlLogo} alt="PostgreSQL logo" />
           </Anchor>
         </Tooltip>
@@ -122,7 +124,7 @@ const TrainingApp = (): JSX.Element => {
           transitionDuration={300}
           transitionTimingFunction="ease"
         >
-          <Anchor href={dockerWeb} target="_blank">
+          <Anchor href={DOCKER_WEB} target="_blank">
             <Image src={DockerLogo} alt="Docker logo" />
           </Anchor>
         </Tooltip>
@@ -130,7 +132,7 @@ const TrainingApp = (): JSX.Element => {
 
       <SectionTitle title="Problems and thought process" />
 
-      <Text style={{ color: textColor, fontSize: 20, paddingTop: 25, paddingBottom: 90 }}>
+      <Text style={textStyles}>
         This was my first project applying hexagonal architecture so at the beginning it was hard to
         code without having a solid understanding and clear vision of how the hexagonal architecture
         works. But as I kept researching and coding it became a lot clearer and I started to
@@ -142,8 +144,8 @@ const TrainingApp = (): JSX.Element => {
 
       <SectionTitle title="Lessons learned" />
 
-      <Text style={{ color: textColor, fontSize: 20, paddingTop: 25, paddingBottom: 120 }}>
-        This project has helped me to solidify my knowledge of hexagonal archicture and its
+      <Text style={{ color: TEXT_COLOR, fontSize: 20, paddingTop: 25, paddingBottom: 120 }}>
+        This project has helped me to solidify my knowledge of hexagonal architecture and its
         benefits. Also I learned a lot more on TypeScript and how to handle complex objects of data.
       </Text>
 
