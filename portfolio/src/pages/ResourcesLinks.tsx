@@ -58,7 +58,7 @@ const ResourcesLinks = (): JSX.Element => {
           }}
         >
           Resources links is an application that allows you to keep all the links of resources that
-          you want to look for in the future in one place.
+          you want to look for in the future in one place and have them categorized.
         </Text>
 
         <Anchor
@@ -77,16 +77,18 @@ const ResourcesLinks = (): JSX.Element => {
         faster, so with Resources Links what I wanted was to have in one place all the links to the
         resources that I find interesting or that I know that I will need in the future. You can add
         a title, a description and categories so you have all the details of each resource and to be
-        able of doing a search and obtain the best result.
+        able of doing a search and obtain the best result. My first goal was to be able of saving
+        new resources and showing them in a table. In the future, I want to be able of searching by
+        title, description or category.
       </Text>
 
       <SectionTitle title="Tech stack and explanation" />
 
       <Text style={textStyles}>
         For this project I used Node.js with TypeScript to build the back end with an hexagonal
-        architecture. For the database I used PostgreSQL with Prisma and Docker to containerize it
-        so I didn't have to install it locally. Lastly, I used React.js for the front end with the
-        help of Mantine's components.
+        architecture. Regarding the database I used PostgreSQL with Prisma as ORM, and Docker to
+        containerize it so I didn't have to install it locally. Lastly, I used React.js for the
+        front end with the help of Mantine's components.
       </Text>
 
       <Group position="center" spacing={50} style={{ paddingBottom: 90 }}>
@@ -185,8 +187,11 @@ const ResourcesLinks = (): JSX.Element => {
       <SectionTitle title="Problems and thought process" />
 
       <Text style={textStyles}>
-        As my first project using React.js I faced the complexity of state handling. I had to
-        understand how the state works and how to manage it.
+        This project was my first experience using React.js and I faced the complexity of state
+        handling, so I had to understand how the state works and how to manage it to be able of
+        providing the accurate data. <br /> <br />
+        Besides the front end I encountered an issue regarding my domain in the back end. Since I
+        lack of business logic my domain is anemic and I ...
       </Text>
 
       <SectionTitle title="Lessons learned" />
@@ -194,8 +199,8 @@ const ResourcesLinks = (): JSX.Element => {
       <Text style={{ color: TEXT_COLOR, fontSize: 20, paddingTop: 25, paddingBottom: 120 }}>
         This was my second project implementing an hexagonal architecture so it helped me
         solidifying my knowledge. Since the app doesn't have much business logic I focused in
-        learning the front end side and I have found the complexity of handling states in an SPA. I
-        have tried to improve my coding skills to make it more readable.
+        learning the front end side and I have found the complexity of handling states in an SPA. In
+        every project I make I try to improve my coding skills to make it more readable.
       </Text>
 
       <Footer />
