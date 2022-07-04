@@ -107,7 +107,6 @@ const ContactMe = (): JSX.Element => {
         <Grid.Col
           xs={10}
           lg={6}
-          style={{}}
           sx={() => ({
             backgroundColor: BACKGROUND_COLOR,
             paddingLeft: 5,

@@ -10,7 +10,6 @@ const Projects = (): JSX.Element => {
   return (
     <Container id="projects" style={{ paddingTop: 140, paddingBottom: 100 }}>
       <Container
-        style={{}}
         sx={() => ({
           paddingRight: 80,
           '@media (max-width: 500px)': { paddingRight: 0 },
@@ -19,7 +18,6 @@ const Projects = (): JSX.Element => {
         <SectionTitle title="What I've been working on" />
         <Text
           align="justify"
-          style={{}}
           sx={() => ({
             color: TEXT_COLOR,
             fontSize: 20,

@@ -28,7 +28,6 @@ const Hero = (): JSX.Element => {
         </Grid.Col>
         <Grid.Col span={12}>
           <Text
-            style={{}}
             sx={() => ({
               color: PRIMARY_COLOR,
               fontSize: 70,
