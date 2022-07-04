@@ -22,9 +22,6 @@ const Header = (): JSX.Element => {
     textElement!.scrollIntoView({ behavior: 'smooth' });
   };
 
-  // Smaller than 940 px Menu
-  // Larger than 940 px grid
-
   return (
     <Container>
       <MediaQuery smallerThan={1000} styles={{ display: 'none' }}>

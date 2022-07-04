@@ -31,7 +31,6 @@ const TrainingApp = (): JSX.Element => {
     >
       <BackToHomeArrow />
       <Text
-        style={{}}
         sx={() => ({
           color: PRIMARY_COLOR,
           fontSize: 60,
@@ -43,8 +42,7 @@ const TrainingApp = (): JSX.Element => {
         Training app 🏋🏻‍♀️
       </Text>
 
-      {/* <Container style={{ paddingBottom: 90, paddingLeft: 0 }}> */}
-      <Grid>
+      <Grid style={{ paddingBottom: 90 }}>
         <Grid.Col span={12}>
           <Text style={{ color: TEXT_COLOR, fontSize: 20, paddingTop: 40, paddingBottom: 40 }}>
             Training app is an application that allows you to track your gym sessions so you can see
@@ -61,19 +59,19 @@ const TrainingApp = (): JSX.Element => {
         </Grid.Col>
         <Grid.Col span={12}>
           <Image
-          
-          height={400}
-          width={600}
             src={trainingAppImage}
             alt="Training App Image"
             sx={() => ({
-              
-              '@media (max-width: 500px)': { width: '100%', height: '100%' },
+              paddingTop: 40,
+              display: 'block',
+              marginLeft: 'auto',
+              marginRight: 'auto',
+              width: '75%',
+              '@media (max-width: 500px)': { width: '100%' },
             })}
           />
         </Grid.Col>
       </Grid>
-      {/* </Container> */}
 
       <SectionTitle title="Purpose and goals" />
 
@@ -81,7 +79,7 @@ const TrainingApp = (): JSX.Element => {
         In 2019 I started going to the gym, and two years later I wanted to know how I was
         progressing and how I was performing. Later that year I started learning to code so I
         thought it would be a great idea if I coded my own app to keep track of my trainings. <br />
-        <br /> My first goal was just to save the exercises for each training, with it's weights and
+        <br /> My first goal was just to save the exercises for each training, with its weights and
         reps. In the future, I want to add a front end and to add graphics so you can see in a
         clearer way your evolution with your weights in every exercise.
       </Text>

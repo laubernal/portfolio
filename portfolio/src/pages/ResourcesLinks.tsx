@@ -1,4 +1,4 @@
-import { Anchor, Container, Group, Image, Text, Tooltip } from '@mantine/core';
+import { Anchor, Container, Grid, Group, Image, Text, Tooltip } from '@mantine/core';
 
 import {
   DOCKER_WEB,
@@ -23,6 +23,7 @@ import DockerLogo from '../images/technologies/DockerLogo.png';
 import Footer from '../components/footer/Footer';
 import SectionTitle from '../components/SectionTitle';
 import BackToHomeArrow from '../components/BackToHomeArrow';
+import ResourcesLinksImage from '../images/projects/resourcesLinksImage.jpg';
 
 const textStyles = { color: TEXT_COLOR, fontSize: 20, paddingTop: 25, paddingBottom: 90 };
 
@@ -36,7 +37,6 @@ const ResourcesLinks = (): JSX.Element => {
     >
       <BackToHomeArrow />
       <Text
-        style={{}}
         sx={() => ({
           color: PRIMARY_COLOR,
           fontSize: 60,
@@ -48,27 +48,43 @@ const ResourcesLinks = (): JSX.Element => {
         Resources links 🔗
       </Text>
 
-      <Container style={{ paddingBottom: 90, paddingLeft: 0 }}>
-        <Text
-          style={{
-            color: TEXT_COLOR,
-            fontSize: 20,
-            paddingTop: 40,
-            paddingBottom: 40,
-          }}
-        >
-          Resources links is an application that allows you to keep all the links of resources that
-          you want to look for in the future in one place and have them categorized.
-        </Text>
+      <Grid style={{ paddingBottom: 90 }}>
+        <Grid.Col>
+          <Text
+            style={{
+              color: TEXT_COLOR,
+              fontSize: 20,
+              paddingTop: 40,
+              paddingBottom: 40,
+            }}
+          >
+            Resources links is an application that allows you to keep all the links of resources
+            that you want to look for in the future in one place and have them categorized.
+          </Text>
 
-        <Anchor
-          href={RESOURCES_LINKS_GITHUB_LINK}
-          target="_blank"
-          style={{ color: SECONDARY_COLOR, fontWeight: 500, paddingBottom: 60 }}
-        >
-          <Text>VIEW SOURCE CODE &#8250;</Text>
-        </Anchor>
-      </Container>
+          <Anchor
+            href={RESOURCES_LINKS_GITHUB_LINK}
+            target="_blank"
+            style={{ color: SECONDARY_COLOR, fontWeight: 500, paddingBottom: 60 }}
+          >
+            <Text>VIEW SOURCE CODE &#8250;</Text>
+          </Anchor>
+        </Grid.Col>
+        <Grid.Col>
+          <Image
+            src={ResourcesLinksImage}
+            alt="Resources Links Image"
+            sx={() => ({
+              paddingTop: 40,
+              display: 'block',
+              marginLeft: 'auto',
+              marginRight: 'auto',
+              width: '75%',
+              '@media (max-width: 500px)': { width: '100%' },
+            })}
+          />
+        </Grid.Col>
+      </Grid>
 
       <SectionTitle title="Purpose and goals" />
 

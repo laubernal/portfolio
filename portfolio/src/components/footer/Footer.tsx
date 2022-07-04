@@ -3,7 +3,9 @@ import { Anchor, Container, Divider, Grid, Group, Image, Text, Tooltip } from '@
 import ReactLogo from '../../images/technologies/ReactLogo.png';
 import NodeLogo from '../../images/technologies/NodeLogo.png';
 import TypescriptLogo from '../../images/technologies/TypeScriptLogo.png';
+import MantineLogo from '../../images/technologies/MantineLogo.png';
 import {
+  MANTINE_WEB,
   NODE_WEB,
   PRIMARY_COLOR,
   REACT_WEB,
@@ -21,21 +23,9 @@ const Footer = (): JSX.Element => {
           <Text style={{ fontSize: 18 }}>Made with 💜 by Laura Bernal</Text>
         </Grid.Col>
 
-        <Grid.Col xs={16} lg={7}>
+        <Grid.Col xs={16} lg={9}>
           <Group>
             <Text style={{ fontSize: 18 }}>Site built with</Text>
-
-            <Tooltip
-              label="React"
-              withArrow
-              transition="slide-down"
-              transitionDuration={300}
-              transitionTimingFunction="ease"
-            >
-              <Anchor href={REACT_WEB} target="_blank">
-                <Image width={25} height={25} src={ReactLogo} alt="React logo" />
-              </Anchor>
-            </Tooltip>
 
             <Tooltip
               label="Node.js"
@@ -58,6 +48,30 @@ const Footer = (): JSX.Element => {
             >
               <Anchor href={TYPESCRIPT_WEB} target="_blank">
                 <Image width={25} height={25} src={TypescriptLogo} alt="TypeScript logo" />
+              </Anchor>
+            </Tooltip>
+
+            <Tooltip
+              label="React"
+              withArrow
+              transition="slide-down"
+              transitionDuration={300}
+              transitionTimingFunction="ease"
+            >
+              <Anchor href={REACT_WEB} target="_blank">
+                <Image width={25} height={25} src={ReactLogo} alt="React logo" />
+              </Anchor>
+            </Tooltip>
+
+            <Tooltip
+              label="Matine"
+              withArrow
+              transition="slide-down"
+              transitionDuration={300}
+              transitionTimingFunction="ease"
+            >
+              <Anchor href={MANTINE_WEB} target="_blank">
+                <Image width={25} height={25} src={MantineLogo} alt="Mantinelogo" />
               </Anchor>
             </Tooltip>
           </Group>
