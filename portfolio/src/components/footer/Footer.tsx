@@ -2,7 +2,7 @@ import { Anchor, Container, Divider, Grid, Group, Image, Text, Tooltip } from '@
 
 import ReactLogo from '../../images/technologies/ReactLogo.png';
 import NodeLogo from '../../images/technologies/NodeLogo.png';
-import TypescriptLogo from '../../images/technologies/TypeScriptLogo.png';
+import TypescriptLogo from '../../images/technologies/TypescriptLogo.png';
 import MantineLogo from '../../images/technologies/MantineLogo.png';
 import {
   MANTINE_WEB,

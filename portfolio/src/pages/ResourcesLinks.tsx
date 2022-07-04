@@ -15,7 +15,7 @@ import {
 } from '../constants';
 import ReactLogo from '../images/technologies/ReactLogo.png';
 import NodeLogo from '../images/technologies/NodeLogo.png';
-import TypescriptLogo from '../images/technologies/TypeScriptLogo.png';
+import TypescriptLogo from '../images/technologies/TypescriptLogo.png';
 import PostgreSqlLogo from '../images/technologies/PostgreSqlLogo.png';
 import PrismaLogo from '../images/technologies/PrismaLogo.png';
 import MantineLogo from '../images/technologies/MantineLogo.png';

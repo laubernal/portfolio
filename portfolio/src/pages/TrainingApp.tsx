@@ -1,7 +1,7 @@
 import { Anchor, Container, Grid, Group, Image, Text, Tooltip } from '@mantine/core';
 
 import NodeLogo from '../images/technologies/NodeLogo.png';
-import TypescriptLogo from '../images/technologies/TypeScriptLogo.png';
+import TypescriptLogo from '../images/technologies/TypescriptLogo.png';
 import PostgreSqlLogo from '../images/technologies/PostgreSqlLogo.png';
 import DockerLogo from '../images/technologies/DockerLogo.png';
 import {
