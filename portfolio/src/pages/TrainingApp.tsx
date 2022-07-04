@@ -1,7 +1,7 @@
 import { Anchor, Container, Grid, Group, Image, Text, Tooltip } from '@mantine/core';
 
 import NodeLogo from '../images/technologies/NodeLogo.png';
-import TypescriptLogo from '../images/technologies/TypescriptLogo.png';
+import TypeScriptLogo from '../images/technologies/TypeScriptLogo.png';
 import PostgreSqlLogo from '../images/technologies/PostgreSqlLogo.png';
 import DockerLogo from '../images/technologies/DockerLogo.png';
 import {
@@ -115,7 +115,7 @@ const TrainingApp = (): JSX.Element => {
           transitionTimingFunction="ease"
         >
           <Anchor href={TYPESCRIPT_WEB} target="_blank">
-            <Image src={TypescriptLogo} alt="TypeScript logo" />
+            <Image src={TypeScriptLogo} alt="TypeScript logo" />
           </Anchor>
         </Tooltip>
 

@@ -2,7 +2,7 @@ import { Anchor, Container, Divider, Grid, Group, Image, Text, Tooltip } from '@
 
 import ReactLogo from '../../images/technologies/ReactLogo.png';
 import NodeLogo from '../../images/technologies/NodeLogo.png';
-import TypescriptLogo from '../../images/technologies/TypescriptLogo.png';
+import TypeScriptLogo from '../../images/technologies/TypeScriptLogo.png';
 import MantineLogo from '../../images/technologies/MantineLogo.png';
 import {
   MANTINE_WEB,
@@ -47,7 +47,7 @@ const Footer = (): JSX.Element => {
               transitionTimingFunction="ease"
             >
               <Anchor href={TYPESCRIPT_WEB} target="_blank">
-                <Image width={25} height={25} src={TypescriptLogo} alt="TypeScript logo" />
+                <Image width={25} height={25} src={TypeScriptLogo} alt="TypeScript logo" />
               </Anchor>
             </Tooltip>
 

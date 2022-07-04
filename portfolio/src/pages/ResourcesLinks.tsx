@@ -15,7 +15,7 @@ import {
 } from '../constants';
 import ReactLogo from '../images/technologies/ReactLogo.png';
 import NodeLogo from '../images/technologies/NodeLogo.png';
-import TypescriptLogo from '../images/technologies/TypescriptLogo.png';
+import TypeScriptLogo from '../images/technologies/TypeScriptLogo.png';
 import PostgreSqlLogo from '../images/technologies/PostgreSqlLogo.png';
 import PrismaLogo from '../images/technologies/PrismaLogo.png';
 import MantineLogo from '../images/technologies/MantineLogo.png';
@@ -130,7 +130,7 @@ const ResourcesLinks = (): JSX.Element => {
           transitionTimingFunction="ease"
         >
           <Anchor href={TYPESCRIPT_WEB} target="_blank">
-            <Image src={TypescriptLogo} alt="TypeScript logo" />
+            <Image src={TypeScriptLogo} alt="TypeScript logo" />
           </Anchor>
         </Tooltip>
 
