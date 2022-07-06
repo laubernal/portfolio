@@ -205,9 +205,10 @@ const ResourcesLinks = (): JSX.Element => {
       <Text style={textStyles}>
         This project was my first experience using React.js and I faced the complexity of state
         handling, so I had to understand how the state works and how to manage it to be able of
-        providing the accurate data. <br /> <br />
+        providing the accurate data.
+        {/* <br /> <br />
         Besides the front end I encountered an issue regarding my domain in the back end. Since I
-        lack of business logic my domain is anemic and I ...
+        lack of business logic my domain is anemic and I ... */}
       </Text>
 
       <SectionTitle title="Lessons learned" />
