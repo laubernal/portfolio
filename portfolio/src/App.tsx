@@ -6,12 +6,18 @@ import TrainingApp from './pages/TrainingApp';
 import ResourcesLinks from './pages/ResourcesLinks';
 import ScrollToTop from './components/ScrollToTop';
 import ScrollToTopArrow from './components/ScrollToTopArrow';
+import './app.css';
 
 const App = (): JSX.Element => {
   return (
-    <MantineProvider theme={{ fontFamily: 'Quicksand', breakpoints: {
-      xs: 275,
-    } }}>
+    <MantineProvider
+      theme={{
+        fontFamily: 'Quicksand, sans-serif',
+        breakpoints: {
+          xs: 275,
+        },
+      }}
+    >
       <ScrollToTop>
         <Routes>
           <Route path="/" element={<Home />} />
