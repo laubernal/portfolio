@@ -43,6 +43,12 @@ const Header = (): JSX.Element => {
           </Grid.Col>
 
           <Grid.Col span={1}>
+            <Anchor underline={false} onClick={() => scrollToSection('professionalCareer')}>
+              <Text style={headerTextStyles}>Professional career</Text>
+            </Anchor>
+          </Grid.Col>
+
+          <Grid.Col span={1}>
             <Anchor underline={false} onClick={() => scrollToSection('skills')}>
               <Text style={headerTextStyles}>Skills</Text>
             </Anchor>

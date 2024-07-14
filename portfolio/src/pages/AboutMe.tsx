@@ -26,7 +26,7 @@ const AboutMe = (): JSX.Element => {
         sx={() => ({ paddingRight: 80, '@media (max-width: 500px)': { paddingRight: 0 } })}
       >
         <SectionTitle title="About me" />
-        <Text
+        {/* <Text
           align="justify"
           sx={() => ({
             color: TEXT_COLOR,
@@ -45,6 +45,22 @@ const AboutMe = (): JSX.Element => {
           of programming and building architectures that facilitate code maintainability and
           scalability. <br /> <br /> I like coding applications that have a useful impact on my day
           to day.
+        </Text> */}
+        <Text
+          align="justify"
+          sx={() => ({
+            color: TEXT_COLOR,
+            fontSize: 20,
+            paddingLeft: 30,
+            paddingTop: 40,
+            '@media (max-width: 500px)': { fontSize: '6vw', paddingLeft: 0 },
+          })}
+        >
+          I'm a software engineer with 3+ years of experience architecting software solutions
+          grounded in hexagonal architecture, DDD, and SOLID principles.
+          <br />
+          <br />
+          All the projects I have worked on are focused on adding the most value to the final customer. 
         </Text>
       </Container>
     </Container>

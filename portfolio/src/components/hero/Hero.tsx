@@ -32,7 +32,7 @@ const Hero = (): JSX.Element => {
               color: PRIMARY_COLOR,
               fontSize: 70,
               fontWeight: 700,
-              letterSpacing: 10,
+              letterSpacing: 6,
               '@media (max-width: 1000px)': {
                 fontSize: '10vw',
               },

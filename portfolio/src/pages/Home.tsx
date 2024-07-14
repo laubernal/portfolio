@@ -7,6 +7,7 @@ import AboutMe from './AboutMe';
 import Projects from './Projects';
 import Skills from './Skills';
 import ContactMe from '../components/ContactMe';
+import ProfessionalCarrer from './ProfessionalCareer';
 
 const Home = (): JSX.Element => {
   return (
@@ -14,6 +15,7 @@ const Home = (): JSX.Element => {
       <Header />
       <Hero />
       <AboutMe />
+      <ProfessionalCarrer />
       <Skills />
       <Projects />
       <ContactMe />
