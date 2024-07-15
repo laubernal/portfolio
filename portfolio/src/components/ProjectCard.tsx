@@ -25,21 +25,22 @@ const ProjectCard = ({
       shadow="sm"
       p="lg"
       sx={() => ({
-        minHeight: 450,
+        // minHeight: 450,
+        minHeight: 200,
         width: 340,
         margin: 'auto',
         '@media (max-width: 500px)': { width: 200 },
       })}
     >
       <Card.Section<typeof Link> component={Link} to={`/${urlProjectName}`}>
-        <Image
+        {/* <Image
           src={imageSrc}
           alt={imageAlt}
           sx={() => ({
             height: 250,
             '@media (max-width: 500px)': { width: '100%', height: '100%' },
           })}
-        />
+        /> */}
       </Card.Section>
 
       <Paper>

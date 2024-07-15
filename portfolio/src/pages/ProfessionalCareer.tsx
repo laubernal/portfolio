@@ -22,7 +22,7 @@ const ProfessionalCarrer = (): JSX.Element => {
           time="January 2023"
           description="- Design and implement a pharmaceutical event attendee management system for 
           dynamically creating registration forms, managing registrants, automated email sending, 
-          attendee capacity management,etc. <br /> 
+          attendee capacity management, etc. <br /> 
           - Implement a chat service using Socket.IO <br /> 
           - Design and implement a diploma template management service to generate a PDF with the 
           necessary data to certify the completion of a training program."

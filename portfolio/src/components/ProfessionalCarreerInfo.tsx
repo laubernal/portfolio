@@ -36,6 +36,7 @@ const ProfessionalCarrerInfo = ({
         sx={() => ({
           color: TEXT_COLOR,
           fontSize: 17,
+          fontStyle: 'italic',
           paddingLeft: 30,
           '@media (max-width: 500px)': { fontSize: '6vw', paddingLeft: 0 },
         })}
@@ -47,7 +48,7 @@ const ProfessionalCarrerInfo = ({
         sx={() => ({
           color: TEXT_COLOR,
           fontSize: 20,
-          fontWeight: 550,
+          fontWeight: 500,
           paddingLeft: 30,
           paddingTop: 5,
           '@media (max-width: 500px)': { fontSize: '6vw', paddingLeft: 0 },
@@ -60,6 +61,7 @@ const ProfessionalCarrerInfo = ({
         sx={() => ({
           color: TEXT_COLOR,
           fontSize: 18,
+          fontStyle: 'italic',
           paddingLeft: 30,
           paddingTop: 5,
           '@media (max-width: 500px)': { fontSize: '6vw', paddingLeft: 0 },
