@@ -5,6 +5,32 @@ import SectionTitle from '../components/SectionTitle';
 import { SECONDARY_COLOR, TEXT_COLOR } from '../constants';
 
 const Skills = (): JSX.Element => {
+  const skills = [
+    'Node.js',
+    'JavaScript',
+    'TypeScript',
+    'Docker',
+    'NestJS',
+    'Hexagonal architecture',
+    'SOLID principles',
+    'Domain Driven Design',
+    'CI/CD',
+    'MongoDB',
+    'PostgreSQL',
+    'MySQL',
+    'Mongoose',
+    'TypeORM',
+    'MikroORM',
+    'Socket.IO',
+    'Amazon S3',
+    'React.js',
+    'Jest'
+  ];
+
+  const halfNumberOfItemsInSkills = Math.ceil(skills.length / 2);
+  const skillsColumn1 = skills.slice(0, halfNumberOfItemsInSkills);
+  const skillsColumn2 = skills.slice(halfNumberOfItemsInSkills);
+
   return (
     <Container id="skills" style={{ color: TEXT_COLOR, paddingTop: 140, paddingBottom: 80 }}>
       <Container
@@ -44,10 +70,9 @@ const Skills = (): JSX.Element => {
                 },
               })}
             >
-              <List.Item>Node.js</List.Item>
-              <List.Item>JavaScript</List.Item>
-              <List.Item>TypeScript</List.Item>
-              <List.Item>Docker</List.Item>
+              {skillsColumn1.map(skill => (
+                <List.Item key={skill}>{skill}</List.Item>
+              ))}
             </List>
           </Grid.Col>
 
@@ -61,10 +86,9 @@ const Skills = (): JSX.Element => {
                 '@media (max-width: 500px)': { fontSize: '6vw' },
               })}
             >
-              <List.Item>PostgreSQL</List.Item>
-              <List.Item>React.js</List.Item>
-              <List.Item>Hexagonal architecture</List.Item>
-              <List.Item>SOLID principles</List.Item>
+              {skillsColumn2.map(skill => (
+                <List.Item key={skill}>{skill}</List.Item>
+              ))}
             </List>
           </Grid.Col>
         </Grid>
