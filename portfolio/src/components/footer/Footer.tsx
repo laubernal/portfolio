@@ -7,7 +7,6 @@ import MantineLogo from '../../images/technologies/MantineLogo.png';
 import {
   MANTINE_WEB,
   NODE_WEB,
-  PRIMARY_COLOR,
   REACT_WEB,
   SECONDARY_COLOR,
   TEXT_COLOR,

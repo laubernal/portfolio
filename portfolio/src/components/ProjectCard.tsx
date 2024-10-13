@@ -1,4 +1,4 @@
-import { Anchor, Card, Center, Image, Paper, Text } from '@mantine/core';
+import { Anchor, Card, Center, Paper, Text } from '@mantine/core';
 import { Link } from 'react-router-dom';
 
 import { SECONDARY_COLOR, TEXT_COLOR } from '../constants';

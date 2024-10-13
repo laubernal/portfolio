@@ -1,4 +1,4 @@
-import { Text, TypographyStylesProvider } from '@mantine/core';
+import { Text } from '@mantine/core';
 import { SECONDARY_COLOR, TEXT_COLOR } from '../constants';
 
 interface props {
