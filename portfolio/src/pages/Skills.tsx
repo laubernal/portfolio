@@ -6,24 +6,23 @@ import { PRIMARY_COLOR, SECONDARY_COLOR, TEXT_COLOR } from '../constants';
 
 const Skills = (): JSX.Element => {
   const technicalSkills = [
-    'Node.js',
-    'JavaScript',
-    'TypeScript',
+    'Node.js / NestJS',
+    'JavaScript / TypeScript',
     'Docker',
-    'NestJS',
     'Hexagonal architecture',
     'SOLID principles',
     'Domain Driven Design',
+    'TDD',
     'CI/CD',
+    'React.js',
     'MongoDB',
-    'PostgreSQL',
-    'MySQL',
     'Mongoose',
+    'MySQL',
+    'PostgreSQL',
     'TypeORM',
     'MikroORM',
     'Socket.IO',
     'Amazon S3',
-    'React.js',
     'Jest',
   ];
 
@@ -73,14 +72,14 @@ const Skills = (): JSX.Element => {
           Technical skills
         </Text>
         <Grid justify="left" columns={24}>
-          <Grid.Col xs={15} sm={8} offset={4}>
+          <Grid.Col xs={15} sm={9} offset={4}>
             <List
               icon={<Point size={25} color={SECONDARY_COLOR} />}
               sx={() => ({
                 color: TEXT_COLOR,
                 fontSize: 20,
                 fontWeight: 500,
-                '@media (max-width: 500px)': {
+                '@media (max-width: 700px)': {
                   fontSize: '6vw',
                   paddingRight: 0,
                   justifyContent: 'left',
@@ -93,7 +92,7 @@ const Skills = (): JSX.Element => {
             </List>
           </Grid.Col>
 
-          <Grid.Col xs={15} sm={8} offset={4}>
+          <Grid.Col xs={15} sm={7} offset={4}>
             <List
               icon={<Point size={25} color={SECONDARY_COLOR} />}
               sx={() => ({
