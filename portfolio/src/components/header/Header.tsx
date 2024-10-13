@@ -27,34 +27,40 @@ const Header = (): JSX.Element => {
       <MediaQuery smallerThan={1000} styles={{ display: 'none' }}>
         <Grid
           grow
+          columns={24}
           style={{
             color: PRIMARY_COLOR,
             fontWeight: 500,
-            paddingLeft: 450,
             paddingTop: 30,
             paddingBottom: 250,
             textAlign: 'center',
           }}
         >
-          <Grid.Col span={1}>
+          <Grid.Col span={4}>
             <Anchor underline={false} onClick={() => scrollToSection('aboutMe')}>
               <Text style={headerTextStyles}>About me</Text>
             </Anchor>
           </Grid.Col>
 
-          <Grid.Col span={1}>
+          <Grid.Col span={4}>
+            <Anchor underline={false} onClick={() => scrollToSection('workExperience')}>
+              <Text style={headerTextStyles}>Work experience</Text>
+            </Anchor>
+          </Grid.Col>
+
+          <Grid.Col span={4}>
             <Anchor underline={false} onClick={() => scrollToSection('skills')}>
               <Text style={headerTextStyles}>Skills</Text>
             </Anchor>
           </Grid.Col>
 
-          <Grid.Col span={1}>
+          <Grid.Col span={4}>
             <Anchor underline={false} onClick={() => scrollToSection('projects')}>
               <Text style={headerTextStyles}>Projects</Text>
             </Anchor>
           </Grid.Col>
 
-          <Grid.Col span={2}>
+          <Grid.Col span={4}>
             <Anchor underline={false} onClick={() => scrollToSection('contact')}>
               <Text style={headerTextStyles}>Contact me</Text>
             </Anchor>
@@ -65,7 +71,7 @@ const Header = (): JSX.Element => {
       <MediaQuery largerThan={1000} styles={{ display: 'none' }}>
         <Menu
           trigger="hover"
-          size={150}
+          size={170}
           withArrow
           control={
             <UnstyledButton>
@@ -80,6 +86,9 @@ const Header = (): JSX.Element => {
         >
           <Menu.Item onClick={() => scrollToSection('aboutMe')} style={menuItemsStyles}>
             About me
+          </Menu.Item>
+          <Menu.Item onClick={() => scrollToSection('workExperience')} style={menuItemsStyles}>
+            Work experience
           </Menu.Item>
           <Menu.Item onClick={() => scrollToSection('skills')} style={menuItemsStyles}>
             Skills

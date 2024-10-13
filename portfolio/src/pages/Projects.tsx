@@ -8,7 +8,7 @@ import resourcesLinksImage from '../images/projects/resourcesLinksImage.jpg';
 
 const Projects = (): JSX.Element => {
   return (
-    <Container id="projects" style={{ paddingTop: 140, paddingBottom: 100 }}>
+    <Container id="projects" style={{ paddingTop: 100, paddingBottom: 100 }}>
       <Container
         sx={() => ({
           paddingRight: 80,
@@ -21,7 +21,6 @@ const Projects = (): JSX.Element => {
           sx={() => ({
             color: TEXT_COLOR,
             fontSize: 20,
-            paddingLeft: 30,
             paddingTop: 25,
             paddingBottom: 40,
             '@media (max-width: 500px)': { fontSize: '6vw', paddingLeft: 0, paddingRight: 0 },

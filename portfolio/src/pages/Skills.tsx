@@ -2,11 +2,44 @@ import { Container, Grid, List, Text } from '@mantine/core';
 import { Point } from 'tabler-icons-react';
 
 import SectionTitle from '../components/SectionTitle';
-import { SECONDARY_COLOR, TEXT_COLOR } from '../constants';
+import { PRIMARY_COLOR, SECONDARY_COLOR, TEXT_COLOR } from '../constants';
 
 const Skills = (): JSX.Element => {
+  const technicalSkills = [
+    'Node.js / NestJS',
+    'JavaScript / TypeScript',
+    'Docker',
+    'Hexagonal architecture',
+    'SOLID principles',
+    'Domain Driven Design',
+    'TDD',
+    'CI/CD',
+    'React.js',
+    'MongoDB',
+    'Mongoose',
+    'MySQL',
+    'PostgreSQL',
+    'TypeORM',
+    'MikroORM',
+    'Socket.IO',
+    'Amazon S3',
+    'Jest',
+  ];
+
+  const softSkills = [
+    'Good communication',
+    'Problem-solving',
+    'Critical thinking',
+    'Teamwork',
+    'Attention to detail',
+  ];
+
+  const halfNumberOfItemsInSkills = Math.ceil(technicalSkills.length / 2);
+  const skillsColumn1 = technicalSkills.slice(0, halfNumberOfItemsInSkills);
+  const skillsColumn2 = technicalSkills.slice(halfNumberOfItemsInSkills);
+
   return (
-    <Container id="skills" style={{ color: TEXT_COLOR, paddingTop: 140, paddingBottom: 80 }}>
+    <Container id="skills" style={{ color: TEXT_COLOR, paddingTop: 100, paddingBottom: 80 }}>
       <Container
         sx={() => ({
           paddingRight: 80,
@@ -18,40 +51,48 @@ const Skills = (): JSX.Element => {
           align="justify"
           sx={() => ({
             fontSize: 20,
-            paddingLeft: 30,
             paddingTop: 40,
-            paddingBottom: 80,
+            paddingBottom: 40,
             '@media (max-width: 500px)': { fontSize: '6vw', paddingLeft: 0, paddingRight: 0 },
           })}
         >
-          As a self-taught developer I've dedicated a lot of time in learning and applying
-          everything learned in real-world applications. I try to focus on writing clean code and
-          architecture.
+          As a software engineer I've dedicated a lot of time in learning and applying everything
+          learned in real-world applications. I try to focus on writing clean code and architecture.
         </Text>
 
-        <Grid justify="left" columns={24} style={{ paddingBottom: 100 }}>
-          <Grid.Col xs={15} sm={8} offset={4}>
+        <Text
+          sx={() => ({
+            color: PRIMARY_COLOR,
+            fontSize: 30,
+            fontWeight: 700,
+            paddingBottom: 25,
+            '@media (max-width: 500px)': { fontSize: '14vw' },
+          })}
+        >
+          Technical skills
+        </Text>
+        <Grid justify="left" columns={24}>
+          <Grid.Col xs={15} sm={9} offset={4}>
             <List
               icon={<Point size={25} color={SECONDARY_COLOR} />}
               sx={() => ({
                 color: TEXT_COLOR,
                 fontSize: 20,
                 fontWeight: 500,
-                '@media (max-width: 500px)': {
+                '@media (max-width: 700px)': {
                   fontSize: '6vw',
                   paddingRight: 0,
                   justifyContent: 'left',
                 },
               })}
             >
-              <List.Item>Node.js</List.Item>
-              <List.Item>JavaScript</List.Item>
-              <List.Item>TypeScript</List.Item>
-              <List.Item>Docker</List.Item>
+              {skillsColumn1.map(skill => (
+                <List.Item key={skill}>{skill}</List.Item>
+              ))}
             </List>
           </Grid.Col>
 
-          <Grid.Col xs={15} sm={8} offset={4}>
+          <Grid.Col xs={15} sm={7} offset={4}>
             <List
               icon={<Point size={25} color={SECONDARY_COLOR} />}
               sx={() => ({
@@ -61,10 +102,40 @@ const Skills = (): JSX.Element => {
                 '@media (max-width: 500px)': { fontSize: '6vw' },
               })}
             >
-              <List.Item>PostgreSQL</List.Item>
-              <List.Item>React.js</List.Item>
-              <List.Item>Hexagonal architecture</List.Item>
-              <List.Item>SOLID principles</List.Item>
+              {skillsColumn2.map(skill => (
+                <List.Item key={skill}>{skill}</List.Item>
+              ))}
+            </List>
+          </Grid.Col>
+        </Grid>
+
+        <Text
+          sx={() => ({
+            color: PRIMARY_COLOR,
+            fontSize: 30,
+            fontWeight: 700,
+            paddingTop: 50,
+            paddingBottom: 25,
+            '@media (max-width: 500px)': { fontSize: '14vw' },
+          })}
+        >
+          Soft skills
+        </Text>
+
+        <Grid justify="left" style={{ paddingBottom: 100 }}>
+          <Grid.Col xs={15} sm={8} offset={2}>
+            <List
+              icon={<Point size={25} color={SECONDARY_COLOR} />}
+              sx={() => ({
+                color: TEXT_COLOR,
+                fontSize: 20,
+                fontWeight: 500,
+                '@media (max-width: 500px)': { fontSize: '6vw' },
+              })}
+            >
+              {softSkills.map(skill => (
+                <List.Item key={skill}>{skill}</List.Item>
+              ))}
             </List>
           </Grid.Col>
         </Grid>

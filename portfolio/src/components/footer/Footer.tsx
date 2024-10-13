@@ -19,11 +19,11 @@ const Footer = (): JSX.Element => {
     <Container style={{ color: TEXT_COLOR, fontWeight: 400, paddingBottom: 30, paddingLeft: 0 }}>
       <Divider color={SECONDARY_COLOR} size="xs" style={{ paddingBottom: 30 }} />
       <Grid justify="center" columns={24}>
-        <Grid.Col xs={16} lg={7}>
+        <Grid.Col xs={16} lg={10}>
           <Text style={{ fontSize: 18 }}>Made with 💜 by Laura Bernal</Text>
         </Grid.Col>
 
-        <Grid.Col xs={16} lg={9}>
+        <Grid.Col xs={16} lg={10}>
           <Group>
             <Text style={{ fontSize: 18 }}>Site built with</Text>
 
@@ -77,7 +77,7 @@ const Footer = (): JSX.Element => {
           </Group>
         </Grid.Col>
 
-        <Grid.Col xs={16} lg={10}>
+        {/* <Grid.Col xs={16} lg={10}>
           <Group>
             <Text style={{ fontSize: 18, wordBreak: 'break-word' }}>
               Images designed by&nbsp;
@@ -98,7 +98,7 @@ const Footer = (): JSX.Element => {
               </Anchor>
             </Text>
           </Group>
-        </Grid.Col>
+        </Grid.Col> */}
       </Grid>
     </Container>
   );
