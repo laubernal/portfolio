@@ -9,7 +9,7 @@ interface props {
   technologiesUsed: string;
 }
 
-const ProfessionalCarrerInfo = ({
+const WorkExperienceInfo = ({
   company,
   position,
   time,
@@ -19,12 +19,10 @@ const ProfessionalCarrerInfo = ({
   return (
     <>
       <Text
-        align="justify"
         sx={() => ({
           color: SECONDARY_COLOR,
           fontSize: 30,
           fontWeight: 700,
-          paddingLeft: 30,
           paddingTop: 40,
           '@media (max-width: 500px)': { fontSize: '6vw', paddingLeft: 0 },
         })}
@@ -32,24 +30,20 @@ const ProfessionalCarrerInfo = ({
         {company}
       </Text>
       <Text
-        align="justify"
         sx={() => ({
           color: TEXT_COLOR,
           fontSize: 17,
           fontStyle: 'italic',
-          paddingLeft: 30,
           '@media (max-width: 500px)': { fontSize: '6vw', paddingLeft: 0 },
         })}
       >
         {position} | {time}
       </Text>
       <Text
-        align="justify"
         sx={() => ({
           color: TEXT_COLOR,
           fontSize: 20,
           fontWeight: 500,
-          paddingLeft: 30,
           paddingTop: 5,
           '@media (max-width: 500px)': { fontSize: '6vw', paddingLeft: 0 },
         })}
@@ -57,12 +51,10 @@ const ProfessionalCarrerInfo = ({
         <span dangerouslySetInnerHTML={{ __html: `${description}` }} />
       </Text>
       <Text
-        align="justify"
         sx={() => ({
           color: TEXT_COLOR,
           fontSize: 18,
           fontStyle: 'italic',
-          paddingLeft: 30,
           paddingTop: 5,
           '@media (max-width: 500px)': { fontSize: '6vw', paddingLeft: 0 },
         })}
@@ -73,4 +65,4 @@ const ProfessionalCarrerInfo = ({
   );
 };
 
-export default ProfessionalCarrerInfo;
+export default WorkExperienceInfo;
